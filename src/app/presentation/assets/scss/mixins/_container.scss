@@ -1,0 +1,40 @@
+@mixin container(
+  $uid: "mo-container",
+  $small: 640px,
+  $medium: 768px,
+  $large: 1024px,
+  $xlarge: 1280px
+) {
+  $container: (
+    "": 100%,
+    "-sm": $small,
+    "-md": $medium,
+    "-lg": $large,
+    "-xl": $xlarge,
+  );
+  @each $prop, $value in $container {
+    .#{$uid}#{$prop} {
+      width: $value;
+    }
+  }
+}
+@mixin max-container(
+  $uid: "mo-max-container",
+  $small: 640px,
+  $medium: 768px,
+  $large: 1024px,
+  $xlarge: 1280px
+) {
+  $container: (
+    "": 100%,
+    "-sm": $small,
+    "-md": $medium,
+    "-lg": $large,
+    "-xl": $xlarge,
+  );
+  @each $prop, $value in $container {
+    .#{$uid}#{$prop} {
+      max-width: $value;
+    }
+  }
+}

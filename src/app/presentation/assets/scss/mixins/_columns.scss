@@ -1,0 +1,17 @@
+@mixin columns($uid: "mo-col", $gap: 16px, $columns: 12) {
+  @for $i from 1 through $columns {
+    $size: calc(100% / $columns) * $i;
+    .#{$uid}-#{$i} {
+      padding: 0 $gap;
+      width: $size;
+      flex-basis: $size;
+    }
+    .#{$uid}-offset-#{$i} {
+      padding-left: calc(100% / $columns) * $i;
+    }
+  }
+  .mo-row {
+    margin-left: -$gap;
+    margin-right: -$gap;
+  }
+}

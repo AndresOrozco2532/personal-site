@@ -1,0 +1,34 @@
+export const POPPINS_BLACK: string = 'Poppins-Black';
+export const POPPINS_BLACKITALIC: string = 'Poppins-BlackItalic';
+export const POPPINS_BOLD: string = 'Poppins-Bold';
+export const POPPINS_BOLDITALIC: string = 'Poppins-BoldItalic';
+export const POPPINS_EXTRABOLD: string = 'Poppins-ExtraBold';
+export const POPPINS_EXTRABOLDITALIC: string = 'Poppins-ExtraBoldItalic';
+export const POPPINS_EXTRALIGHT: string = 'Poppins-ExtraLight';
+export const POPPINS_EXTRALIGHTITALIC: string = 'Poppins-ExtraLightItalic';
+export const POPPINS_ITALIC: string = 'Poppins-Italic';
+export const POPPINS_LIGHT: string = 'Poppins-Light';
+export const POPPINS_LIGHTITALIC: string = 'Poppins-LightItalic';
+export const POPPINS_MEDIUM: string = 'Poppins-Medium';
+export const POPPINS_MEDIUMITALIC: string = 'Poppins-MediumItalic';
+export const POPPINS_REGULAR: string = 'Poppins-Regular';
+export const POPPINS_SEMIBOLD: string = 'Poppins-SemiBold';
+export const POPPINS_SEMIBOLDITALIC: string = 'Poppins-SemiBoldItalic';
+export const POPPINS_THIN: string = 'Poppins-Thin';
+export const POPPINS_THINITALIC: string = 'Poppins-ThinItalic';
+
+export const ROBOTO_BLACK: string = 'Roboto-Black';
+export const ROBOTO_BLACKITALIC: string = 'Roboto-BlackItalic';
+export const ROBOTO_BOLD: string = 'Roboto-Bold';
+export const ROBOTO_BOLDITALIC: string = 'Roboto-BoldItalic';
+export const ROBOTO_ITALIC: string = 'Roboto-Italic';
+export const ROBOTO_LIGHT: string = 'Roboto-Light';
+export const ROBOTO_LIGHTITALIC: string = 'Roboto-LightItalic';
+export const ROBOTO_MEDIUM: string = 'Roboto-Medium';
+export const ROBOTO_MEDIUMITALIC: string = 'Roboto-MediumItalic';
+export const ROBOTO_REGULAR: string = 'Roboto-Regular';
+export const ROBOTO_THIN: string = 'Roboto-Thin';
+export const ROBOTO_THINITALIC: string = 'Roboto-ThinItalic';
+
+export const UNICONS_SOLID: string = 'Unicons-solid';
+export const UNICONS_LINE: string = 'Unicons-line';

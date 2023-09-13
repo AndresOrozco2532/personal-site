@@ -1,0 +1,146 @@
+@mixin inputControlBase() {
+  display: block;
+  width: 100%;
+  height: auto;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.5;
+  color: var(--color-neutral-80);
+  background-color: var(--color-neutral-20);
+  background-clip: padding-box;
+  border-radius: 6px;
+  transition: background-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  font-family: var(--font-secondary-regular);
+  border: 1px solid var(--color-neutral-10);
+  position: relative;
+  padding: 12px 16px;
+
+  &.size-lg {
+    padding: 14px 18px;
+    height: 56px;
+    font-size: 16px;
+  }
+  &.size-md {
+    padding: 10px 14px;
+    height: 46px;
+    font-size: 13px;
+  }
+  &.size-sm {
+    padding: 5px 12px;
+    font-size: 12px;
+    height: 28px;
+  }
+  &.light {
+    background-color: white;
+    border: 1px solid var(--color-neutral-30);
+    &:hover {
+      background-color: var(--color-neutral-20);
+    }
+  }
+  &.primary {
+    background-color: var(--color-primary-10);
+    border: 1px solid var(--color-primary-60);
+    i,
+    .item-option {
+      color: var(--color-primary-80);
+      font-family: var(--font-secondary-medium);
+    }
+    &:hover {
+      background-color: var(--color-primary-20);
+    }
+  }
+  &.outline-primary {
+    background-color: white;
+    border: 1px solid var(--color-primary-60);
+    &:hover {
+      background-color: var(--color-primary-10);
+    }
+  }
+  &:hover {
+    background-color: var(--color-neutral-20);
+  }
+  &.error-control {
+    border: 1px solid var(--color-error-60);
+  }
+  &:focus {
+    border: 2px solid var(--color-primary-60);
+    background-color: var(--color-neutral-20);
+  }
+  &.disabled {
+    opacity: 0.5;
+  }
+}
+
+@mixin placeholder($font-size, $color-base, $color-hover) {
+  ::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    color: $color-base;
+    font-size: $font-size;
+    font-family: var(--font-secondary-regular);
+  }
+  ::-moz-placeholder {
+    /* Firefox 19+ */
+    color: $color-base;
+    font-size: $font-size;
+    font-family: var(--font-secondary-regular);
+  }
+  :-ms-input-placeholder {
+    /* IE 10+ */
+    color: $color-base;
+    font-size: $font-size;
+    font-family: var(--font-secondary-regular);
+  }
+  :-moz-placeholder {
+    /* Firefox 18- */
+    color: $color-base;
+    font-size: $font-size;
+    font-family: var(--font-secondary-regular);
+  }
+  :hover::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    color: $color-hover;
+  }
+  :hover::-moz-placeholder {
+    /* Firefox 19+ */
+    color: $color-hover;
+  }
+  :hover:-ms-input-placeholder {
+    /* IE 10+ */
+    color: $color-hover;
+  }
+  :hover:-moz-placeholder {
+    /* Firefox 18- */
+    color: $color-hover;
+  }
+}
+
+.mo-label-tooltip-container {
+  position: relative;
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  margin-bottom: 8px;
+  label {
+    &.mo-label {
+      margin-bottom: 0;
+    }
+  }
+}
+
+label {
+  &.mo-label {
+    font-weight: 500;
+    font-size: var(--text-font-size-small);
+    margin-bottom: 8px;
+    display: block;
+    font-family: var(--font-secondary-regular);
+    padding-left: 5px;
+    &.is-floating-label {
+      position: absolute;
+      top: -11px;
+      left: 16px;
+      font-size: 12px;
+      z-index: 1;
+    }
+  }
+}

@@ -1,0 +1,18 @@
+version: "3.9"
+
+services:
+  admin:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        - env=development
+    volumes:
+      - .:/portal
+      - /portal/node_modules
+      - ${HOME}/.ssh:/home/node/.ssh:ro
+    ports:
+      - 4200:4200
+      - 49163:49153
+    environment:
+      - CHOKIDAR_USEPOLLING=true
