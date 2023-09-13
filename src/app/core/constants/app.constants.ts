@@ -1,0 +1,3 @@
+export const APP_CONSTANTS = {
+  SIZE_LARGE_SCREEN: 1024,
+};

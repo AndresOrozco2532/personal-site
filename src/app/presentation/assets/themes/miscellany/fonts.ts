@@ -29,6 +29,3 @@ export const ROBOTO_MEDIUMITALIC: string = 'Roboto-MediumItalic';
 export const ROBOTO_REGULAR: string = 'Roboto-Regular';
 export const ROBOTO_THIN: string = 'Roboto-Thin';
 export const ROBOTO_THINITALIC: string = 'Roboto-ThinItalic';
-
-export const UNICONS_SOLID: string = 'Unicons-solid';
-export const UNICONS_LINE: string = 'Unicons-line';

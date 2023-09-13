@@ -107,3 +107,6 @@ export const ADITIONAL_GRAY_40: string = '#7d7d7c';
 export const ADITIONAL_GRAY_60: string = '#3c3c3b';
 export const ADITIONAL_GRAY_80: string = '#222222';
 export const ADITIONAL_GRAY_100: string = '#070707';
+
+// Background
+export const BACKGROUND: string = '#0D1117';

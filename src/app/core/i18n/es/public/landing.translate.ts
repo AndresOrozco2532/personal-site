@@ -1,0 +1,66 @@
+import { LandingPageTranslate } from '../../models/public/landing.translate.model';
+
+const LANDING: LandingPageTranslate = {
+  HERO: {
+    NAME: 'Inicio',
+    GREETING: 'Hola, Soy',
+    SOFTWARE: 'Ingeniero de',
+    ENGINEER: 'Software',
+    DESCRIPTION:
+      'Ingeniero hábil e ingenioso capacitado para cualquier desafío de desarrollo web que tengas.',
+    BTN_HIRE_ME: 'CONTRÁTAME',
+    SOME_TOOL: 'Algunas de las herramientas que más uso',
+  },
+  SKILLS: {
+    NAME: 'Habilidades',
+    TITLE: '¿Por qué contratarme?',
+    DESCRIPTION:
+      'Deberías Contratarme como ingeniero de software porque tengo un amplio conocimiento sobre las etapas del desarrollo web como...',
+    FRONT: 'Angular/React',
+    BACK: 'C# /.Net Core / .Net Framework',
+    APIS: 'Servicios Web (Apis)',
+    GIT: 'TFS/Git',
+  },
+  SERVICES: {
+    NAME: 'Servicios',
+    TITLE: 'Los servicios que proporciono',
+    FRONT: {
+      TITLE: 'Desarrollador Front-End',
+      DESCRIPTION:
+        'Como desarrollador front-end tengo experiencia en la creación de interfaces de usuario atractivas y funcionales usando Angular y React, lista para llevar la excelencia en diseño web a proyectos desafiantes.',
+    },
+    BACK: {
+      TITLE: 'Desarrollador Back-End ',
+      DESCRIPTION:
+        'Desarrollador backend con sólida experiencia en .NET, especializado en la construcción de sistemas robustos y escalables, con enfoque en la optimización del rendimiento y la seguridad.',
+    },
+    APPS: {
+      TITLE: 'Desarrollador de  aplicaciones',
+      DESCRIPTION:
+        'Soy un desarrollador de aplicaciones IONIC con una trayectoria comprobada en la creación de aplicaciones móviles multiplataforma visualmente atractivas y de alto rendimiento, aprovechando al máximo la versatilidad de Ionic para ofrecer soluciones de calidad excepcional.',
+    },
+    BPM: {
+      TITLE: 'Gestión de Procesos de Negocio',
+      DESCRIPTION:
+        'Desarrollador con experiencia en BPM (Business Process Management), destacado por la capacidad de automatizar y optimizar los flujos de trabajo empresariales, mejorando la eficiencia operativa y la toma de decisiones informadas.',
+    },
+  },
+  LETS_WORK_TOGETHER: {
+    NAME: 'Trabajemos juntos',
+    TITLE: '¿Listo para elevar tu marca digital?',
+    DESCRIPTION: 'Colaboremos y creemos algo extraordinario juntos.',
+    CONTACT: {
+      TAB: 'Contáctame',
+      NAME: 'Nombre',
+      NAME_PLACEHOLDER: 'Escribe su nombre',
+      EMAIL: 'Correo electrónico',
+      EMAIL_PLACEHOLDER: 'Escribe tu correo electrónico',
+      MESSAGE: 'Mensaje',
+      MESSAGE_PLACEHOLDER: 'Cuéntame algo sobre lo que tienes en mente',
+      BTN_SEND: 'Enviar',
+    },
+  },
+  FOOTER: { NOTE: 'Todos los derechos Reservados.' },
+};
+
+export default LANDING;

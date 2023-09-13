@@ -106,6 +106,10 @@ const BAY_OF_MANY_COLORS: ThemeProperty = {
   '--color-bay-of-many-100': MISCELLANY_COLORS.BAY_OF_MANY_100,
 };
 
+const BACKGROUND_COLOR: ThemeProperty = {
+  '--color-backgroud': MISCELLANY_COLORS.BACKGROUND,
+};
+
 export const COLORS = {
   ...PRIMARY_COLORS,
   ...SECONDARY_COLORS,
@@ -118,4 +122,5 @@ export const COLORS = {
   ...GRAY_COLORS,
   ...CORAL_COLORS,
   ...BAY_OF_MANY_COLORS,
+  ...BACKGROUND_COLOR,
 };

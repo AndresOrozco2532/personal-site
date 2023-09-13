@@ -1,5 +1,6 @@
 import { AVAILABLE_THEMES } from '@app/core/constants/themes.constant';
 import { DEFAULT_LANGUAGE } from '@app/core/i18n/constants/translate.constants';
+import { THEMES } from '@app/presentation/assets/enum/theme.enum';
 import { Action, createReducer, on } from '@ngrx/store';
 import {
   updateIsDesktopScreen,
@@ -10,7 +11,7 @@ import { AppState } from './app.state';
 
 export const initialAppState: AppState = {
   language: DEFAULT_LANGUAGE,
-  theme: AVAILABLE_THEMES.DEFAULT_THEME.NAME,
+  theme: AVAILABLE_THEMES[THEMES.DARK].NAME,
   isDesktopScreen: true,
 };
 
@@ -27,7 +28,6 @@ const _appReducer = createReducer(
   on(updateIsDesktopScreen, (state, { isDesktopScreen }) => ({
     ...state,
     isDesktopScreen,
-    showSlideModal: isDesktopScreen,
   }))
 );
 

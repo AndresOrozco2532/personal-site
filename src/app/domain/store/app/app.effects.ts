@@ -3,6 +3,7 @@ import { AVAILABLE_THEMES } from '@app/core/constants/themes.constant';
 import { DEFAULT_LANGUAGE } from '@app/core/i18n/constants/translate.constants';
 import { ThemeService } from '@app/core/services/ui/theme.service';
 import { LanguageService } from '@app/domain/services/app/language.service';
+import { THEMES } from '@app/presentation/assets/enum/theme.enum';
 import { Actions, createEffect, ofType } from '@ngrx/effects';
 import { Store } from '@ngrx/store';
 import { map } from 'rxjs';
@@ -25,7 +26,7 @@ export class AppEffects {
         tap(() => {
           this._store.dispatch(
             appActions.updateTheme({
-              theme: AVAILABLE_THEMES.DEFAULT_THEME.NAME,
+              theme: AVAILABLE_THEMES[THEMES.DARK].NAME,
             })
           );
           this._store.dispatch(
