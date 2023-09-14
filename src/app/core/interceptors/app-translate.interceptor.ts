@@ -31,6 +31,7 @@ export class AppTranslateInterceptor implements HttpInterceptor {
         .split(LANGUAGE_SUFFIX)
         .shift();
 
+      console.log(this._getBody(language));
       return of(
         new HttpResponse({
           status: HTTP_CODES.OK,

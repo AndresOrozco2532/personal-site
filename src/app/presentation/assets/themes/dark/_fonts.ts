@@ -65,11 +65,11 @@ const TITLE_SIZES: ThemeProperty = {
 };
 
 const TITLE_LINE_HEIGHT: ThemeProperty = {
-  '--title-line-height-1': '66px',
-  '--title-line-height-2': '',
+  '--title-line-height-1': '88px',
+  '--title-line-height-2': '66px',
   '--title-line-height-3': '',
-  '--title-line-height-4': '22px',
-  '--title-line-height-5': '',
+  '--title-line-height-4': '33px',
+  '--title-line-height-5': '22px',
   '--title-line-height-6': '',
 };
 

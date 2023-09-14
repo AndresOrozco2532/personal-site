@@ -44,13 +44,13 @@ export const ERROR_60: string = '#ff4759';
 export const ERROR_80: string = '#8f222b';
 export const ERROR_100: string = '#3a0408';
 
-// Bluette
-export const BLUETTE_10: string = '#eceafd';
-export const BLUETTE_20: string = '#bab7fa';
-export const BLUETTE_40: string = '#8b94f8';
-export const BLUETTE_60: string = '#4860f5';
-export const BLUETTE_80: string = '#253b8b';
-export const BLUETTE_100: string = '#0c2040';
+// Cian
+export const CIAN_10: string = '#2CD3E1';
+export const CIAN_20: string = '#00A8B6';
+export const CIAN_40: string = '#007F8D';
+export const CIAN_60: string = '#4860f5';
+export const CIAN_80: string = '#005765';
+export const CIAN_100: string = '#003241';
 
 // Dark Blue
 export const DARK_BLUE_10: string = '#e9e9ec';
@@ -110,3 +110,4 @@ export const ADITIONAL_GRAY_100: string = '#070707';
 
 // Background
 export const BACKGROUND: string = '#0D1117';
+export const TEXT_BASE: string = '#fff';

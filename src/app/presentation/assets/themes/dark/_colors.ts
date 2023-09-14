@@ -2,12 +2,12 @@ import { ThemeProperty } from '@app/core/models/theme.model';
 import * as MISCELLANY_COLORS from '../miscellany/colors';
 
 const PRIMARY_COLORS: ThemeProperty = {
-  '--color-primary-10': MISCELLANY_COLORS.BLUETTE_10,
-  '--color-primary-20': MISCELLANY_COLORS.BLUETTE_20,
-  '--color-primary-40': MISCELLANY_COLORS.BLUETTE_40,
-  '--color-primary-60': MISCELLANY_COLORS.BLUETTE_60,
-  '--color-primary-80': MISCELLANY_COLORS.BLUETTE_80,
-  '--color-primary-100': MISCELLANY_COLORS.BLUETTE_100,
+  '--color-primary-10': MISCELLANY_COLORS.CIAN_10,
+  '--color-primary-20': MISCELLANY_COLORS.CIAN_20,
+  '--color-primary-40': MISCELLANY_COLORS.CIAN_40,
+  '--color-primary-60': MISCELLANY_COLORS.CIAN_60,
+  '--color-primary-80': MISCELLANY_COLORS.CIAN_80,
+  '--color-primary-100': MISCELLANY_COLORS.CIAN_100,
 };
 
 const SECONDARY_COLORS: ThemeProperty = {
@@ -106,8 +106,9 @@ const BAY_OF_MANY_COLORS: ThemeProperty = {
   '--color-bay-of-many-100': MISCELLANY_COLORS.BAY_OF_MANY_100,
 };
 
-const BACKGROUND_COLOR: ThemeProperty = {
+const APP_COLORS: ThemeProperty = {
   '--color-backgroud': MISCELLANY_COLORS.BACKGROUND,
+  '--color-text-base': MISCELLANY_COLORS.TEXT_BASE,
 };
 
 export const COLORS = {
@@ -122,5 +123,5 @@ export const COLORS = {
   ...GRAY_COLORS,
   ...CORAL_COLORS,
   ...BAY_OF_MANY_COLORS,
-  ...BACKGROUND_COLOR,
+  ...APP_COLORS,
 };

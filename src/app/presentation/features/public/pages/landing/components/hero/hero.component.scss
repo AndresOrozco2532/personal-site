@@ -1,0 +1,77 @@
+@import "variables/breakpoints";
+@import "mixins/breakpoints";
+
+.hero {
+  padding: 10rem;
+  @include to(laptop) {
+    padding: 3rem 2rem 2rem;
+  }
+  &__top {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 1rem;
+    @include to(laptop) {
+      display: flex;
+      flex-direction: column-reverse;
+    }
+    .info,
+    .figures {
+      display: grid;
+      justify-content: center;
+      align-items: center;
+    }
+    .info {
+      gap: 1rem;
+      @include to(laptop) {
+        text-align: center;
+      }
+      &__greeting {
+        font-size: var(--text-font-size-extrabig);
+      }
+      &__name {
+        color: var(--color-primary-10);
+        font-size: var(--title-font-size-1);
+      }
+      &__career {
+        font-size: calc(var(--title-font-size-1) + 52px);
+        font-family: var(--font-primary-bold);
+        line-height: var(--title-line-height-1);
+        @include to(laptop) {
+          display: flex;
+          align-self: center;
+          justify-content: center;
+          gap: 0.5rem;
+          font-size: var(--title-font-size-1);
+          line-height: var(--title-line-height-4);
+        }
+        span {
+          margin-left: 6rem;
+          @include to(laptop) {
+            margin-left: 0;
+          }
+        }
+      }
+      &__description {
+        font-size: var(--text-font-size-extrabig);
+        width: 70%;
+        @include to(laptop) {
+          text-align: left;
+          width: 100%;
+        }
+      }
+    }
+
+    .figures {
+      &__photo {
+        content: var(--image-figure-hero);
+        @include to(laptop) {
+          width: 50%;
+          margin: 0 auto;
+        }
+      }
+    }
+  }
+  &__tools {
+  }
+}
