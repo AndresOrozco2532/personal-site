@@ -44,13 +44,13 @@ export const ERROR_60: string = '#ff4759';
 export const ERROR_80: string = '#8f222b';
 export const ERROR_100: string = '#3a0408';
 
-// Cian
-export const CIAN_10: string = '#2CD3E1';
-export const CIAN_20: string = '#00A8B6';
-export const CIAN_40: string = '#007F8D';
-export const CIAN_60: string = '#4860f5';
-export const CIAN_80: string = '#005765';
-export const CIAN_100: string = '#003241';
+// Turquoise
+export const TURQUOISE_10: string = '#28BBC8';
+export const TURQUOISE_20: string = '#00A8B6';
+export const TURQUOISE_40: string = '#007F8D';
+export const TURQUOISE_60: string = '#005765';
+export const TURQUOISE_80: string = '#005765';
+export const TURQUOISE_100: string = '#003241';
 
 // Dark Blue
 export const DARK_BLUE_10: string = '#e9e9ec';
@@ -107,6 +107,22 @@ export const ADITIONAL_GRAY_40: string = '#7d7d7c';
 export const ADITIONAL_GRAY_60: string = '#3c3c3b';
 export const ADITIONAL_GRAY_80: string = '#222222';
 export const ADITIONAL_GRAY_100: string = '#070707';
+
+// Plump Purple
+export const PLUMP_PURPLE_10: string = '#FABEFF';
+export const PLUMP_PURPLE_20: string = '#D49CFF';
+export const PLUMP_PURPLE_40: string = '#AF7AFF';
+export const PLUMP_PURPLE_60: string = '#8B5ADE';
+export const PLUMP_PURPLE_80: string = '#673ABA';
+export const PLUMP_PURPLE_100: string = '#542AA3';
+
+// American Green
+export const AMERICAN_GREEN_10: string = '#3FB950';
+export const AMERICAN_GREEN_20: string = '#00942E';
+export const AMERICAN_GREEN_40: string = '#007107';
+export const AMERICAN_GREEN_60: string = '#004F00';
+export const AMERICAN_GREEN_80: string = '#003000';
+export const AMERICAN_GREEN_100: string = '#002D00';
 
 // Background
 export const BACKGROUND: string = '#0D1117';

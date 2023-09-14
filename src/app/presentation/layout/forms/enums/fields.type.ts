@@ -1,13 +1,7 @@
 export enum BUTTON_DESIGN_CLASS {
-  DEFAULT = 'template-default',
-  OUTLINE_DEFAULT = 'outline-default',
-  OUTLINE_PRIMARY = 'outline-primary',
-  OUTLINE_PRIMARY_DARK = 'outline-primary__dark',
-  NEUTRO_DARK = 'template-neutro-dark',
   PRIMARY = 'template-primary',
-  ALTERNATIVE = 'template-alternative',
-  ALTERNATIVE_ACTIVE = 'template-alternative active',
-  DARK_GREEN = 'template-dark-green',
+  PLUMP_PURPLE = 'template-plump-purple',
+  AMERICAN_GREEN = 'template-american-green',
 }
 
 export enum BUTTON_TYPE {

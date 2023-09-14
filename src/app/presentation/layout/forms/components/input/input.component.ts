@@ -23,7 +23,7 @@ import { ICON_COLORS } from '@app/presentation/layout/components/icon/icon.const
 import { FORM_CONSTANTS } from '../../constants/form.constants';
 import { ICON_POSITION, INPUT_TYPE } from '../../enums/fields.type';
 @Component({
-  selector: 'input',
+  selector: 'form-input',
   templateUrl: './input.component.html',
   styleUrls: ['./input.component.scss'],
   providers: [

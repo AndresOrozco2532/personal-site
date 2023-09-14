@@ -1,0 +1,19 @@
+import {
+  IMAGE_TOOL_ANGULAR,
+  IMAGE_TOOL_ATLASSIAN,
+  IMAGE_TOOL_CSHARP,
+  IMAGE_TOOL_FIGMA,
+  IMAGE_TOOL_GIT,
+  IMAGE_TOOL_NGRX,
+  IMAGE_TOOL_REACT,
+} from '@app/presentation/assets/themes/miscellany/images';
+
+export const TOOLS_SRC: string[] = [
+  IMAGE_TOOL_ANGULAR,
+  IMAGE_TOOL_NGRX,
+  IMAGE_TOOL_REACT,
+  IMAGE_TOOL_GIT,
+  IMAGE_TOOL_CSHARP,
+  IMAGE_TOOL_FIGMA,
+  IMAGE_TOOL_ATLASSIAN,
+];

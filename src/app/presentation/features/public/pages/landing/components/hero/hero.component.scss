@@ -2,7 +2,10 @@
 @import "mixins/breakpoints";
 
 .hero {
-  padding: 10rem;
+  padding: 9rem 16rem;
+  @include to(laptop-l) {
+    padding: 10rem;
+  }
   @include to(laptop) {
     padding: 3rem 2rem 2rem;
   }
@@ -54,8 +57,10 @@
       }
       &__description {
         font-size: var(--text-font-size-extrabig);
-        width: 70%;
+        width: 90%;
+        margin-bottom: 1rem;
         @include to(laptop) {
+          font-size: var(--text-font-size-big);
           text-align: left;
           width: 100%;
         }
@@ -73,5 +78,20 @@
     }
   }
   &__tools {
+    margin: 1rem 0;
+    @include to(laptop) {
+      margin: 2rem 0 1rem;
+    }
+    .icons {
+      margin: 1rem 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      @include to(laptop) {
+        &__tool {
+          width: 20px;
+        }
+      }
+    }
   }
 }

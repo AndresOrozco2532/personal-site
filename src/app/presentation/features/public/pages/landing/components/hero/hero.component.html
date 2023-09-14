@@ -12,10 +12,22 @@
       <p class="info__description">
         {{ "PUBLIC.LANDING.HERO.DESCRIPTION" | translate }}
       </p>
+      <form-button
+        [text]="'PUBLIC.LANDING.HERO.BTN_HIRE_ME' | translate"
+        [size]="SIZES.MD"
+        [designClass]="BUTTON_DESIGN_CLASS.PLUMP_PURPLE"
+      ></form-button>
     </div>
     <div class="figures">
       <img class="figures__photo" />
     </div>
   </div>
-  <div class="hero__tools"></div>
+  <div class="hero__tools">
+    <p class="title">
+      {{ "PUBLIC.LANDING.HERO.SOME_TOOL" | translate }}
+    </p>
+    <div class="icons">
+      <img class="icons__tool" [src]="src" *ngFor="let src of tools" />
+    </div>
+  </div>
 </div>

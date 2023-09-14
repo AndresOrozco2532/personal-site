@@ -12,7 +12,7 @@ import {
 } from '../../enums/fields.type';
 
 @Component({
-  selector: 'button',
+  selector: 'form-button',
   templateUrl: './button.component.html',
   styleUrls: ['./button.component.scss'],
   imports: [CommonModule, LoadingComponent],

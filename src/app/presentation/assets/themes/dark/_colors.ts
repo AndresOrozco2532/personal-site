@@ -2,12 +2,12 @@ import { ThemeProperty } from '@app/core/models/theme.model';
 import * as MISCELLANY_COLORS from '../miscellany/colors';
 
 const PRIMARY_COLORS: ThemeProperty = {
-  '--color-primary-10': MISCELLANY_COLORS.CIAN_10,
-  '--color-primary-20': MISCELLANY_COLORS.CIAN_20,
-  '--color-primary-40': MISCELLANY_COLORS.CIAN_40,
-  '--color-primary-60': MISCELLANY_COLORS.CIAN_60,
-  '--color-primary-80': MISCELLANY_COLORS.CIAN_80,
-  '--color-primary-100': MISCELLANY_COLORS.CIAN_100,
+  '--color-primary-10': MISCELLANY_COLORS.TURQUOISE_10,
+  '--color-primary-20': MISCELLANY_COLORS.TURQUOISE_20,
+  '--color-primary-40': MISCELLANY_COLORS.TURQUOISE_40,
+  '--color-primary-60': MISCELLANY_COLORS.TURQUOISE_60,
+  '--color-primary-80': MISCELLANY_COLORS.TURQUOISE_80,
+  '--color-primary-100': MISCELLANY_COLORS.TURQUOISE_100,
 };
 
 const SECONDARY_COLORS: ThemeProperty = {
@@ -106,6 +106,24 @@ const BAY_OF_MANY_COLORS: ThemeProperty = {
   '--color-bay-of-many-100': MISCELLANY_COLORS.BAY_OF_MANY_100,
 };
 
+const PLUMP_PURPLE_COLORS: ThemeProperty = {
+  '--color-plump-purple-10': MISCELLANY_COLORS.PLUMP_PURPLE_10,
+  '--color-plump-purple-20': MISCELLANY_COLORS.PLUMP_PURPLE_20,
+  '--color-plump-purple-40': MISCELLANY_COLORS.PLUMP_PURPLE_40,
+  '--color-plump-purple-60': MISCELLANY_COLORS.PLUMP_PURPLE_60,
+  '--color-plump-purple-80': MISCELLANY_COLORS.PLUMP_PURPLE_80,
+  '--color-plump-purple-100': MISCELLANY_COLORS.PLUMP_PURPLE_100,
+};
+
+const AMERICAN_GREEN_COLORS: ThemeProperty = {
+  '--color-american-green-10': MISCELLANY_COLORS.AMERICAN_GREEN_10,
+  '--color-american-green-20': MISCELLANY_COLORS.AMERICAN_GREEN_20,
+  '--color-american-green-40': MISCELLANY_COLORS.AMERICAN_GREEN_40,
+  '--color-american-green-60': MISCELLANY_COLORS.AMERICAN_GREEN_60,
+  '--color-american-green-80': MISCELLANY_COLORS.AMERICAN_GREEN_80,
+  '--color-american-green-100': MISCELLANY_COLORS.AMERICAN_GREEN_100,
+};
+
 const APP_COLORS: ThemeProperty = {
   '--color-backgroud': MISCELLANY_COLORS.BACKGROUND,
   '--color-text-base': MISCELLANY_COLORS.TEXT_BASE,
@@ -123,5 +141,7 @@ export const COLORS = {
   ...GRAY_COLORS,
   ...CORAL_COLORS,
   ...BAY_OF_MANY_COLORS,
+  ...PLUMP_PURPLE_COLORS,
+  ...AMERICAN_GREEN_COLORS,
   ...APP_COLORS,
 };
