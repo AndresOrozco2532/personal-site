@@ -1,0 +1,41 @@
+.form-group {
+  .form-relative {
+    position: relative;
+    display: grid;
+  }
+
+  .box-icon {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+
+    &.left {
+      left: 15px;
+    }
+    &.right {
+      right: 15px;
+    }
+    i {
+      margin-left: 8px;
+      font-size: 20px;
+    }
+    &.size-lg {
+      top: 30%;
+      i {
+        font-size: 22px;
+      }
+    }
+    &.size-md {
+      top: 20%;
+      i {
+        font-size: 20px;
+      }
+    }
+    &.size-sm {
+      top: 15%;
+      i {
+        font-size: 14px;
+      }
+    }
+  }
+}

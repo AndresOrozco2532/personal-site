@@ -1,0 +1,45 @@
+<div class="form-group">
+  <label class="label">
+    {{ label }}
+    <ng-container *ngTemplateOutlet="rightContent"></ng-container>
+  </label>
+  <div class="form-relative">
+    <input
+      #inputEl
+      class="form-control"
+      [type]="type"
+      (input)="onInput($event)"
+      (blur)="onUpdateValue()"
+      (keydown)="onEnter($event)"
+      [value]="value"
+      [placeholder]="placeholder"
+      [disabled]="isDisabled || disabled"
+      [attr.maxlength]="maxlength"
+      [attr.required]="required"
+      [attr.inputmode]="inputmode"
+      [attr.pattern]="regex"
+      autocomplete="off"
+      [ngStyle]="buildPaddingInputWhenHasIcons()"
+    />
+    <div #boxIcon *ngIf="icon" [class]="'box-icon ' + iconPosition">
+      <layout-icon [icon]="icon" [color]="iconColor" (click)="onClickIcon()">
+      </layout-icon>
+    </div>
+    <div
+      #boxIconSecondary
+      *ngIf="iconSecondary"
+      [class]="'box-icon ' + iconSecondaryPosition"
+    >
+      <layout-icon
+        [icon]="iconSecondary"
+        [color]="iconSecondaryColor"
+        (click)="onClickIcon(true)"
+      >
+      </layout-icon>
+    </div>
+  </div>
+</div>
+
+<ng-template #rightContent>
+  <ng-content></ng-content>
+</ng-template>

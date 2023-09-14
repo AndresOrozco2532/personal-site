@@ -114,21 +114,21 @@
   }
 }
 
-.mo-label-tooltip-container {
+.label-tooltip-container {
   position: relative;
   display: flex;
   gap: 0.5rem;
   align-items: center;
   margin-bottom: 8px;
   label {
-    &.mo-label {
+    &.label {
       margin-bottom: 0;
     }
   }
 }
 
 label {
-  &.mo-label {
+  &.label {
     font-weight: 500;
     font-size: var(--text-font-size-small);
     margin-bottom: 8px;

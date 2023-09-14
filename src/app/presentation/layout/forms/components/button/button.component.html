@@ -1,0 +1,20 @@
+<button
+  [type]="type"
+  [disabled]="isDisabled"
+  [class]="'button ' + size + ' ' + designClass"
+  [ngClass]="{
+    reverse: iconPosition === ICON_POSITIONS.RIGHT ? true : false,
+    disabled: isDisabled,
+    'is-block': displayBlock
+  }"
+>
+  <i *ngIf="iconPosition" [class]="'uil ' + icon + ' ' + iconPosition"></i>
+  <span [ngClass]="{ 'is-loading': isLoading }">{{ text }}</span>
+  <span class="loading-content">
+    <loading
+      *ngIf="isLoading"
+      [size]="size"
+      [color]="COLOR_TEMPLATES.LIGHT"
+    ></loading>
+  </span>
+</button>

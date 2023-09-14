@@ -1,0 +1,22 @@
+<ng-container [ngSwitch]="type">
+  <mat-icon *ngSwitchCase="'material'" [class]="'icon icon-' + color">
+    {{ icon }}
+  </mat-icon>
+
+  <span
+    *ngSwitchCase="'mo'"
+    [class]="'icon ' + icon + ' icon-' + color"
+    [ngStyle]="{ 'font-size': size }"
+  ></span>
+
+  <img
+    *ngSwitchCase="'image'"
+    [class]="'icon-image icon-' + color"
+    [src]="'/assets/img/icon/' + icon"
+  />
+
+  <i
+    [class]="'uil ' + icon + ' icon-' + color"
+    [ngStyle]="{ 'font-size': size }"
+  ></i>
+</ng-container>

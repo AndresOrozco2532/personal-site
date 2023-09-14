@@ -4,8 +4,9 @@ import { RouterModule } from '@angular/router';
 import { TranslateModule } from '@ngx-translate/core';
 import { AppComponent } from './components/app/app.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { FormModule } from './forms/forms.module';
 
-const SHARED_MODULES = [TranslateModule];
+const SHARED_MODULES = [TranslateModule, FormModule];
 
 @NgModule({
   declarations: [AppComponent, FooterComponent],

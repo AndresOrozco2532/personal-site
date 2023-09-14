@@ -1,0 +1,49 @@
+$width-icon: 2.2rem;
+$font-size-icon: 1.3rem;
+
+.icon-image {
+  width: $width-icon;
+  height: auto;
+  position: relative;
+  padding: 0.6rem;
+  border-radius: 6px;
+}
+.icon {
+  border-radius: 6px;
+  transition: all 300ms linear;
+  padding: 0.5rem;
+  font-size: $font-size-icon;
+  width: $width-icon;
+  height: $width-icon;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon,
+.icon-image {
+  max-width: none;
+}
+
+.icon-error {
+  color: var(--color-error-60);
+}
+.icon-primary {
+  color: var(--color-primary-60);
+}
+.icon-success {
+  color: var(--color-success-60);
+}
+.icon-warning {
+  color: var(--color-warning-60);
+}
+.icon-neutral {
+  color: var(--color-neutral-50);
+}
+.icon-back {
+  color: var(--color-neutral-100);
+}
+.icon-common-bg {
+  background-color: #005682;
+}

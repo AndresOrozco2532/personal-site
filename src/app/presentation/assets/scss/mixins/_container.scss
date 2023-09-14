@@ -1,5 +1,5 @@
 @mixin container(
-  $uid: "mo-container",
+  $uid: "base-container",
   $small: 640px,
   $medium: 768px,
   $large: 1024px,
@@ -19,7 +19,7 @@
   }
 }
 @mixin max-container(
-  $uid: "mo-max-container",
+  $uid: "base-max-container",
   $small: 640px,
   $medium: 768px,
   $large: 1024px,
