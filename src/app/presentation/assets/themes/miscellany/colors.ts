@@ -124,6 +124,14 @@ export const AMERICAN_GREEN_60: string = '#004F00';
 export const AMERICAN_GREEN_80: string = '#003000';
 export const AMERICAN_GREEN_100: string = '#002D00';
 
+// Dark Salmon
+export const DARK_SALMON_10: string = '#F3A493';
+export const DARK_SALMON_20: string = '#F4957F';
+export const DARK_SALMON_40: string = '#C9705C';
+export const DARK_SALMON_60: string = '#A04C3A';
+export const DARK_SALMON_80: string = '#77291B';
+export const DARK_SALMON_100: string = '#510300';
+
 // Background
 export const BACKGROUND: string = '#0D1117';
 export const TEXT_BASE: string = '#fff';

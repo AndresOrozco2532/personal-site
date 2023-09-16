@@ -1,6 +1,7 @@
 import { SideBarStyle } from '@app/core/models/side-bar.model';
 import { Slider } from '@app/core/models/slider.model';
 import {
+  ICONS_CSS_VAR,
   ICON_TOOL_ANGULAR,
   ICON_TOOL_ATLASSIAN,
   ICON_TOOL_CSHARP,
@@ -16,6 +17,12 @@ export const SIDE_BAR_STYLES: { [key: string]: SideBarStyle } = {
   },
   SKILLS: {
     background: `linear-gradient(#56D364, #2EA043 10%, #196C2E 70%, #EC6547 80%, #FFD6CC)`,
+  },
+  SERVICES: {
+    background: `linear-gradient(#FFD6CC, #EC6547 10%, #35395F 70%, #797EF9 80%, #ABB4FF)`,
+  },
+  WORK_TOGETHER: {
+    background: `linear-gradient(#35395F, #797EF9 10%, #939BFC 70%, #ABB4FF 80%)`,
   },
 };
 
@@ -47,5 +54,36 @@ export const SKILLS_LIST: Slider[] = [
   {
     title: 'PUBLIC.LANDING.SKILLS.GIT',
     percentage: 94,
+  },
+];
+
+// SERVICES
+
+export interface ServiceCard {
+  icon: string;
+  title: string;
+  description: string;
+}
+
+export const SERVICES: ServiceCard[] = [
+  {
+    icon: ICONS_CSS_VAR.SERVICE_FRONTEND,
+    title: 'PUBLIC.LANDING.SERVICES.FRONT.TITLE',
+    description: 'PUBLIC.LANDING.SERVICES.FRONT.DESCRIPTION',
+  },
+  {
+    icon: ICONS_CSS_VAR.SERVICE_BACKEND,
+    title: 'PUBLIC.LANDING.SERVICES.BACK.TITLE',
+    description: 'PUBLIC.LANDING.SERVICES.BACK.DESCRIPTION',
+  },
+  {
+    icon: ICONS_CSS_VAR.SERVICE_APPS,
+    title: 'PUBLIC.LANDING.SERVICES.APPS.TITLE',
+    description: 'PUBLIC.LANDING.SERVICES.APPS.DESCRIPTION',
+  },
+  {
+    icon: ICONS_CSS_VAR.SERVICE_BPM,
+    title: 'PUBLIC.LANDING.SERVICES.BPM.TITLE',
+    description: 'PUBLIC.LANDING.SERVICES.BPM.DESCRIPTION',
   },
 ];

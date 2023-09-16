@@ -13,9 +13,9 @@ const LANDING: LandingPageTranslate = {
   },
   SKILLS: {
     NAME: 'Habilidades',
-    TITLE: '¿Por qué contratarme?',
+    TITLE: '¿Por qué <span class="highlighted">contratarme</span>?',
     DESCRIPTION:
-      'Deberías Contratarme como ingeniero de software porque tengo un amplio conocimiento sobre las etapas del desarrollo web como...',
+      'Deberías <span class="highlighted">Contratarme</span> como ingeniero de software porque tengo un amplio conocimiento sobre las etapas del desarrollo web como...',
     FRONT: 'Angular/React',
     BACK: 'C# /.Net Core / .Net Framework',
     APIS: 'Servicios Web (Apis)',
@@ -23,7 +23,7 @@ const LANDING: LandingPageTranslate = {
   },
   SERVICES: {
     NAME: 'Servicios',
-    TITLE: 'Los servicios que proporciono',
+    TITLE: 'Los servicios que <span class="highlighted">proporciono</span>',
     FRONT: {
       TITLE: 'Desarrollador Front-End',
       DESCRIPTION:

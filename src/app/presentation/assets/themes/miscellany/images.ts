@@ -43,6 +43,16 @@ export const ICON_TOOL_FIGMA: string =
 export const ICON_TOOL_ATLASSIAN: string =
   '/app/presentation/assets/icons/tools/atlassian.svg';
 
+// SERVICES
+export const ICON_SERVICE_FRONTEND: string =
+  '/app/presentation/assets/icons/services/frontend.svg';
+export const ICON_SERVICE_BACKEND: string =
+  '/app/presentation/assets/icons/services/backend.svg';
+export const ICON_SERVICE_APPS: string =
+  '/app/presentation/assets/icons/services/apps.svg';
+export const ICON_SERVICE_BPM: string =
+  '/app/presentation/assets/icons/services/bpm.svg';
+
 export enum ICONS_CSS_VAR {
   // GENERAL
   SLIDER_THUMB = '--slider-thumb',
@@ -66,6 +76,11 @@ export enum ICONS_CSS_VAR {
   TOOL_CSHARP = '--image-tool-csharp',
   TOOL_FIGMA = '--image-tool-figma',
   TOOL_ATLASSIAN = '--image-tool-atlassian',
+  // SERVICES
+  SERVICE_FRONTEND = '--image-service-frontend',
+  SERVICE_BACKEND = '--image-service-backend',
+  SERVICE_APPS = '--image-service-apps',
+  SERVICE_BPM = '--image-service-bpm',
 }
 
 /***

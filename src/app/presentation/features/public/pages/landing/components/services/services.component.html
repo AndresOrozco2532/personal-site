@@ -1,1 +1,32 @@
-<div class="services"></div>
+<div class="services" id="services">
+  <layout-section-container>
+    <layout-side-bar
+      [icon]="barIcon"
+      [barStyles]="barStyle"
+      slot="bar"
+    ></layout-side-bar>
+    <div class="services__content" slot="content">
+      <p class="section-name">
+        {{ "PUBLIC.LANDING.SERVICES.NAME" | translate }}
+      </p>
+      <div class="services-container">
+        <h2
+          class="services-container__title"
+          [innerHTML]="'PUBLIC.LANDING.SERVICES.TITLE' | translate"
+        ></h2>
+        <div class="services-container__cards">
+          <div class="card" *ngFor="let service of services">
+            <img
+              class="card__icon"
+              [ngStyle]="{ content: 'var(' + service.icon + ')' }"
+            />
+            <div class="card__info">
+              <p class="title">{{ service.title | translate }}</p>
+              <p class="description">{{ service.description | translate }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </layout-section-container>
+</div>

@@ -124,6 +124,15 @@ const AMERICAN_GREEN_COLORS: ThemeProperty = {
   '--color-american-green-100': MISCELLANY_COLORS.AMERICAN_GREEN_100,
 };
 
+const DARK_SALMON_COLORS: ThemeProperty = {
+  '--color-dark-salmon-10': MISCELLANY_COLORS.DARK_SALMON_10,
+  '--color-dark-salmon-20': MISCELLANY_COLORS.DARK_SALMON_20,
+  '--color-dark-salmon-40': MISCELLANY_COLORS.DARK_SALMON_40,
+  '--color-dark-salmon-60': MISCELLANY_COLORS.DARK_SALMON_60,
+  '--color-dark-salmon-80': MISCELLANY_COLORS.DARK_SALMON_80,
+  '--color-dark-salmon-100': MISCELLANY_COLORS.DARK_SALMON_100,
+};
+
 const APP_COLORS: ThemeProperty = {
   '--color-backgroud': MISCELLANY_COLORS.BACKGROUND,
   '--color-text-base': MISCELLANY_COLORS.TEXT_BASE,
@@ -143,5 +152,6 @@ export const COLORS = {
   ...BAY_OF_MANY_COLORS,
   ...PLUMP_PURPLE_COLORS,
   ...AMERICAN_GREEN_COLORS,
+  ...DARK_SALMON_COLORS,
   ...APP_COLORS,
 };

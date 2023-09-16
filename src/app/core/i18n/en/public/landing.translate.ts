@@ -13,7 +13,7 @@ const LANDING: LandingPageTranslate = {
   },
   SKILLS: {
     NAME: 'Skills',
-    TITLE: 'Why you <span class="highlighted">hire me</span>',
+    TITLE: 'Why you <span class="highlighted">hire me</span>?',
     DESCRIPTION:
       'You should <span class="highlighted">Hire Me</span> as a Software Engineer because I have extensive knowledge about stages of web development such as...',
     FRONT: 'Angular/React',
@@ -23,7 +23,7 @@ const LANDING: LandingPageTranslate = {
   },
   SERVICES: {
     NAME: 'Services',
-    TITLE: 'The services I provide',
+    TITLE: 'The services <span class="highlighted">I provide</span>',
     FRONT: {
       TITLE: 'Front-End Developer',
       DESCRIPTION:
