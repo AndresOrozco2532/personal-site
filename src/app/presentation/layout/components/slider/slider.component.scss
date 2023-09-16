@@ -1,0 +1,68 @@
+@import "variables/breakpoints";
+@import "mixins/breakpoints";
+
+.slider {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  margin: 1rem 0;
+  gap: 1rem;
+  @include to(laptop) {
+    gap: 0.5rem;
+  }
+  &__label {
+    font-size: var(--title-font-size-2);
+    @include to(laptop) {
+      font-size: var(--text-font-size-big);
+    }
+  }
+  &__range {
+    /* removing default appearance */
+    -webkit-appearance: none;
+    /* creating a custom design */
+    width: 100%;
+    cursor: pointer;
+    outline: none;
+    /*  slider progress trick  */
+    overflow: hidden;
+    border-radius: 16px;
+
+    /* Track: webkit browsers */
+    &::-webkit-slider-runnable-track {
+      height: 15px;
+      background: var(--color-neutral-10);
+      border-radius: 16px;
+    }
+    /* Thumb: webkit */
+    &::-webkit-slider-thumb {
+      /* removing default appearance */
+      -webkit-appearance: none;
+      appearance: none;
+      /* creating a custom design */
+      height: 15px;
+      width: 15px;
+      background-color: var(--color-neutral-10);
+      background-size: contain;
+      background-position: center center;
+      background-repeat: no-repeat;
+      border-radius: 50%;
+      border: 2px solid var(--color-american-green-10);
+      /*  slider progress trick  */
+      box-shadow: -407px 0 0 400px var(--color-american-green-10);
+    }
+
+    /* Thumb: Firefox */
+    &::-moz-range-thumb {
+      height: 15px;
+      width: 15px;
+      background-color: var(--color-neutral-10);
+      background-size: contain;
+      background-position: center center;
+      background-repeat: no-repeat;
+      border-radius: 50%;
+      border: 1px solid var(--color-american-green-10);
+      /*  slider progress trick  */
+      box-shadow: -407px 0 0 400px var(--color-american-green-10);
+    }
+  }
+}

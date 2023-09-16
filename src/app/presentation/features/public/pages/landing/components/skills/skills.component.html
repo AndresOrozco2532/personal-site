@@ -1,1 +1,34 @@
-<div class="skills"></div>
+<div class="skills" id="skills">
+  <layout-section-container>
+    <layout-side-bar
+      [icon]="barIcon"
+      [barStyles]="barStyle"
+      slot="bar"
+    ></layout-side-bar>
+    <div class="skills__content" slot="content">
+      <div class="figures">
+        <p class="section-name">
+          {{ "PUBLIC.LANDING.SKILLS.NAME" | translate }}
+        </p>
+        <img class="figures__photo" />
+      </div>
+      <div class="info">
+        <h2
+          class="info__title"
+          [innerHTML]="'PUBLIC.LANDING.SKILLS.TITLE' | translate"
+        ></h2>
+        <p
+          class="info__description"
+          [innerHTML]="'PUBLIC.LANDING.SKILLS.DESCRIPTION' | translate"
+        ></p>
+        <div class="info__skills-list">
+          <layout-slider
+            *ngFor="let skill of skillList"
+            [slider]="skill"
+            [isDisabled]="true"
+          ></layout-slider>
+        </div>
+      </div>
+    </div>
+  </layout-section-container>
+</div>

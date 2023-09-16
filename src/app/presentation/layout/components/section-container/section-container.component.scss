@@ -4,7 +4,7 @@
 .section-container {
   display: grid;
   grid-template-columns: max-content 1fr;
-  gap: 1rem;
+  gap: 2rem;
   @include to(laptop) {
     gap: 0.2rem;
   }

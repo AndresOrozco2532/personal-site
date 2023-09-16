@@ -1,0 +1,14 @@
+@import "variables/breakpoints";
+@import "mixins/breakpoints";
+
+.landing {
+  display: grid;
+  padding: 9rem 16rem;
+  gap: 1rem;
+  @include to(laptop-l) {
+    padding: 10rem;
+  }
+  @include to(laptop) {
+    padding: 3rem 2rem 2rem 0.3rem;
+  }
+}

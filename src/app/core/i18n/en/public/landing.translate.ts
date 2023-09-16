@@ -13,9 +13,9 @@ const LANDING: LandingPageTranslate = {
   },
   SKILLS: {
     NAME: 'Skills',
-    TITLE: 'Why you hire me',
+    TITLE: 'Why you <span class="highlighted">hire me</span>',
     DESCRIPTION:
-      'You should Hire Me as a Software Engineer because I have extensive knowledge about stages of web development such as...',
+      'You should <span class="highlighted">Hire Me</span> as a Software Engineer because I have extensive knowledge about stages of web development such as...',
     FRONT: 'Angular/React',
     BACK: 'C# /.Net Core / .Net Framework',
     APIS: 'Web Services (Apis)',

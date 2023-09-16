@@ -6,9 +6,14 @@ import { AppComponent } from './components/app/app.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { SectionContainerComponent } from './components/section-container/section-container.component';
 import { SideBarComponent } from './components/side-bar/side-bar.component';
+import { SliderComponent } from './components/slider/slider.component';
 import { FormModule } from './forms/forms.module';
 
-const SHARED_COMPONENTS = [SectionContainerComponent, SideBarComponent];
+const SHARED_COMPONENTS = [
+  SectionContainerComponent,
+  SideBarComponent,
+  SliderComponent,
+];
 
 const SHARED_MODULES = [TranslateModule, FormModule];
 

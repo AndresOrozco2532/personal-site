@@ -1,46 +1,63 @@
 /***
-  IMAGES
+  ICONS
 **/
+// GENERAL
+export const ICON_SLIDER_THUMB: string =
+  '/app/presentation/assets/icons/general/slider-thumb.svg';
 
 // BACKGROUND
-export const IMAGE_BACKGROUND: string =
-  '/app/presentation/assets/img/backgrounds/background.svg';
+export const ICON_BACKGROUND: string =
+  '/app/presentation/assets/icons/backgrounds/background.svg';
 
 // LOGOS
-export const IMAGE_LOGO: string = '/app/presentation/assets/img/logo/logo.svg';
+export const ICON_LOGO: string = '/app/presentation/assets/icons/logo/logo.svg';
 
 // FIGURES
-export const IMAGE_FIGURE_HERO: string =
-  '/app/presentation/assets/img/figures/hero.svg';
+export const ICON_FIGURE_HERO: string =
+  '/app/presentation/assets/icons/figures/hero.svg';
+export const ICON_FIGURE_SKILLS: string =
+  '/app/presentation/assets/icons/figures/skills.svg';
 // FIGURES
-export const IMAGE_SECTION_CODE_HERO: string =
-  '/app/presentation/assets/img/sections/code-hero.svg';
+export const ICON_SECTION_HERO: string =
+  '/app/presentation/assets/icons/sections/hero.svg';
+export const ICON_SECTION_SKILLS: string =
+  '/app/presentation/assets/icons/sections/skills.svg';
+export const ICON_SECTION_SERVICES: string =
+  '/app/presentation/assets/icons/sections/services.svg';
+export const ICON_SECTION_WORK_TOGETHER: string =
+  '/app/presentation/assets/icons/sections/work-together.svg';
 
 // TOOLS
-export const IMAGE_TOOL_ANGULAR: string =
-  '/app/presentation/assets/img/tools/angular.svg';
-export const IMAGE_TOOL_NGRX: string =
-  '/app/presentation/assets/img/tools/ngrx.svg';
-export const IMAGE_TOOL_REACT: string =
-  '/app/presentation/assets/img/tools/react.svg';
-export const IMAGE_TOOL_GIT: string =
-  '/app/presentation/assets/img/tools/git.svg';
-export const IMAGE_TOOL_CSHARP: string =
-  '/app/presentation/assets/img/tools/csharp.svg';
-export const IMAGE_TOOL_FIGMA: string =
-  '/app/presentation/assets/img/tools/figma.svg';
-export const IMAGE_TOOL_ATLASSIAN: string =
-  '/app/presentation/assets/img/tools/atlassian.svg';
+export const ICON_TOOL_ANGULAR: string =
+  '/app/presentation/assets/icons/tools/angular.svg';
+export const ICON_TOOL_NGRX: string =
+  '/app/presentation/assets/icons/tools/ngrx.svg';
+export const ICON_TOOL_REACT: string =
+  '/app/presentation/assets/icons/tools/react.svg';
+export const ICON_TOOL_GIT: string =
+  '/app/presentation/assets/icons/tools/git.svg';
+export const ICON_TOOL_CSHARP: string =
+  '/app/presentation/assets/icons/tools/csharp.svg';
+export const ICON_TOOL_FIGMA: string =
+  '/app/presentation/assets/icons/tools/figma.svg';
+export const ICON_TOOL_ATLASSIAN: string =
+  '/app/presentation/assets/icons/tools/atlassian.svg';
 
-export enum IMAGES_CSS_VAR {
+export enum ICONS_CSS_VAR {
+  // GENERAL
+  SLIDER_THUMB = '--slider-thumb',
   // BACKGROUND
   BACKGROUND = '--image-background',
   // LOGOS
   LOGO = '--image-logo',
   // FIGURES
   FIGURE_HERO = '--image-figure-hero',
+  FIGURE_SKILLS = '--image-figure-skills',
   // SECTIONS
-  SECTION_CODE_HERO = '--image-section-code-hero',
+  SECTION_HERO = '--image-section-hero',
+  SECTION_SKILLS = '--image-section-skills',
+  SECTION_SERVICES = '--image-section-services',
+  SECTION_WORK_TOGETHER = '--image-section-work-together',
   // TOOLS
   TOOL_ANGULAR = '--image-tool-angular',
   TOOL_NGRX = '--image-tool-ngrx',
@@ -52,13 +69,7 @@ export enum IMAGES_CSS_VAR {
 }
 
 /***
-  ICONS
+  IMAGES
 **/
-// GENERAL
-export const ICON_CLOSE: string =
-  '/app/presentation/assets/icons/general/close.svg';
 
-export enum ICONS_CSS_VAR {
-  // GENERAL
-  CLOSE = '--icon-close',
-}
+export enum IMAGES_CSS_VAR {}

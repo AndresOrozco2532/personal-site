@@ -1,0 +1,11 @@
+<div class="slider">
+  <label class="slider__label" *ngIf="slider?.title">
+    {{ slider?.title | translate }}
+  </label>
+  <input
+    class="slider__range"
+    type="range"
+    [value]="slider?.percentage"
+    [disabled]="isDisabled"
+  />
+</div>
