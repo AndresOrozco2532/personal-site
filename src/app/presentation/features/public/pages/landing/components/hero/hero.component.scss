@@ -7,7 +7,7 @@
     padding: 10rem;
   }
   @include to(laptop) {
-    padding: 3rem 2rem 2rem;
+    padding: 3rem 2rem 2rem 0.3rem;
   }
   &__top {
     display: grid;
@@ -45,7 +45,7 @@
           align-self: center;
           justify-content: center;
           gap: 0.5rem;
-          font-size: var(--title-font-size-1);
+          font-size: calc(var(--title-font-size-3) + 5px);
           line-height: var(--title-line-height-4);
         }
         span {
@@ -79,6 +79,9 @@
   }
   &__tools {
     margin: 1rem 0;
+    animation: backInUp; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 1s; /* don't forget to set a duration! */
+
     @include to(laptop) {
       margin: 2rem 0 1rem;
     }

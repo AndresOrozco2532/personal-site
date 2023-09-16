@@ -1,0 +1,11 @@
+@import "variables/breakpoints";
+@import "mixins/breakpoints";
+
+.section-container {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  gap: 1rem;
+  @include to(laptop) {
+    gap: 0.2rem;
+  }
+}

@@ -12,6 +12,9 @@ export const IMAGE_LOGO: string = '/app/presentation/assets/img/logo/logo.svg';
 // FIGURES
 export const IMAGE_FIGURE_HERO: string =
   '/app/presentation/assets/img/figures/hero.svg';
+// FIGURES
+export const IMAGE_SECTION_CODE_HERO: string =
+  '/app/presentation/assets/img/sections/code-hero.svg';
 
 // TOOLS
 export const IMAGE_TOOL_ANGULAR: string =
@@ -36,6 +39,8 @@ export enum IMAGES_CSS_VAR {
   LOGO = '--image-logo',
   // FIGURES
   FIGURE_HERO = '--image-figure-hero',
+  // SECTIONS
+  SECTION_CODE_HERO = '--image-section-code-hero',
   // TOOLS
   TOOL_ANGULAR = '--image-tool-angular',
   TOOL_NGRX = '--image-tool-ngrx',

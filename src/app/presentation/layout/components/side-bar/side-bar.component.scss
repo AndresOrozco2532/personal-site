@@ -1,0 +1,13 @@
+.side-bar {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  &__bar {
+    width: 3px;
+    border-radius: 3px;
+    height: 100%;
+  }
+}
