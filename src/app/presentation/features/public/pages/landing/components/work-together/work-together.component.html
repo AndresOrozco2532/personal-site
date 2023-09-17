@@ -1,1 +1,50 @@
-<div class="work-together"></div>
+<div class="work-together" id="work-together">
+  <layout-section-container>
+    <layout-side-bar
+      [icon]="barIcon"
+      [barStyles]="barStyle"
+      slot="bar"
+    ></layout-side-bar>
+    <div class="work-together__content" slot="content">
+      <p class="section-name">
+        {{ "PUBLIC.LANDING.LETS_WORK_TOGETHER.NAME" | translate }}
+      </p>
+      <div class="contact-container">
+        <p class="contact-container__title">
+          {{ "PUBLIC.LANDING.LETS_WORK_TOGETHER.TITLE" | translate }}
+        </p>
+        <p class="contact-container__description">
+          {{ "PUBLIC.LANDING.LETS_WORK_TOGETHER.DESCRIPTION" | translate }}
+        </p>
+
+        <div class="contact-container__form"></div>
+        <div class="contact-container__console">
+          <layout-tab-group
+            [activeTabIndex]="0"
+            [tabsAlignClass]="TABS_ALIGN_CLASS.LEFT"
+            (tabChange)="onTabChange($event)"
+          >
+            <layout-tab-item *ngFor="let tab of tabs; let i = index">
+              <layout-tab-label>
+                <div class="tab">
+                  <img [ngStyle]="{ content: 'var(' + tab?.icon + ')' }" />
+                  <p>{{ tab?.title | translate }}</p>
+                </div>
+              </layout-tab-label>
+              <layout-tab-body>
+                <div class="console-container">
+                  <monaco-editor
+                    [refreshLayout]="index === getTabIndex(tab?.language)"
+                    [options]="tab?.editorOptions"
+                    [ngModel]="tab?.code | translate"
+                    (ngModelChange)="(tab?.code)"
+                  ></monaco-editor>
+                </div>
+              </layout-tab-body>
+            </layout-tab-item>
+          </layout-tab-group>
+        </div>
+      </div>
+    </div>
+  </layout-section-container>
+</div>

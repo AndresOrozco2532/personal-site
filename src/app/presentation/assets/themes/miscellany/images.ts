@@ -53,34 +53,46 @@ export const ICON_SERVICE_APPS: string =
 export const ICON_SERVICE_BPM: string =
   '/app/presentation/assets/icons/services/bpm.svg';
 
+// LANGUAGES
+export const ICON_LANGUAGES_TYPESCRIPT: string =
+  '/app/presentation/assets/icons/languages/typescript.svg';
+export const ICON_LANGUAGES_HTML: string =
+  '/app/presentation/assets/icons/languages/html.svg';
+export const ICON_LANGUAGES_SCSS: string =
+  '/app/presentation/assets/icons/languages/scss.svg';
+
 export enum ICONS_CSS_VAR {
   // GENERAL
-  SLIDER_THUMB = '--slider-thumb',
+  SLIDER_THUMB = '--icon-slider-thumb',
   // BACKGROUND
-  BACKGROUND = '--image-background',
+  BACKGROUND = '--icon-background',
   // LOGOS
-  LOGO = '--image-logo',
+  LOGO = '--icon-logo',
   // FIGURES
-  FIGURE_HERO = '--image-figure-hero',
-  FIGURE_SKILLS = '--image-figure-skills',
+  FIGURE_HERO = '--icon-figure-hero',
+  FIGURE_SKILLS = '--icon-figure-skills',
   // SECTIONS
-  SECTION_HERO = '--image-section-hero',
-  SECTION_SKILLS = '--image-section-skills',
-  SECTION_SERVICES = '--image-section-services',
-  SECTION_WORK_TOGETHER = '--image-section-work-together',
+  SECTION_HERO = '--icon-section-hero',
+  SECTION_SKILLS = '--icon-section-skills',
+  SECTION_SERVICES = '--icon-section-services',
+  SECTION_WORK_TOGETHER = '--icon-section-work-together',
   // TOOLS
-  TOOL_ANGULAR = '--image-tool-angular',
-  TOOL_NGRX = '--image-tool-ngrx',
-  TOOL_REACT = '--image-tool-react',
-  TOOL_GIT = '--image-tool-git',
-  TOOL_CSHARP = '--image-tool-csharp',
-  TOOL_FIGMA = '--image-tool-figma',
-  TOOL_ATLASSIAN = '--image-tool-atlassian',
+  TOOL_ANGULAR = '--icon-tool-angular',
+  TOOL_NGRX = '--icon-tool-ngrx',
+  TOOL_REACT = '--icon-tool-react',
+  TOOL_GIT = '--icon-tool-git',
+  TOOL_CSHARP = '--icon-tool-csharp',
+  TOOL_FIGMA = '--icon-tool-figma',
+  TOOL_ATLASSIAN = '--icon-tool-atlassian',
   // SERVICES
-  SERVICE_FRONTEND = '--image-service-frontend',
-  SERVICE_BACKEND = '--image-service-backend',
-  SERVICE_APPS = '--image-service-apps',
-  SERVICE_BPM = '--image-service-bpm',
+  SERVICE_FRONTEND = '--icon-service-frontend',
+  SERVICE_BACKEND = '--icon-service-backend',
+  SERVICE_APPS = '--icon-service-apps',
+  SERVICE_BPM = '--icon-service-bpm',
+  // LANGUAGES
+  LANGUAGES_TYPESCRIPT = '--icon-language-typescript',
+  LANGUAGES_HTML = '--icon-language-html',
+  LANGUAGES_SCSS = '--icon-language-scss',
 }
 
 /***

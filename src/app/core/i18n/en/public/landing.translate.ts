@@ -60,6 +60,32 @@ const LANDING: LandingPageTranslate = {
       MESSAGE_PLACEHOLDER: 'Tell me something about what’s on your mind',
       BTN_SEND: 'Send',
     },
+    CONSOLE: {
+      TABS: {
+        TYPESCRIPT: 'contact.ts',
+        HTML: 'contact.html',
+        SCSS: 'contact.scss',
+      },
+      CODE: {
+        TYPESCRIPT: `export class AndresOrozco {
+  public getContactData(): ContactInfo {
+      const contactInfo = {
+        email: "andresorozco2532@gmail.com",
+        phone: "+57 320 201 2700"
+      };
+      return contactInfo;
+    }
+  }
+
+  interface ContactInfo {
+    email: string;
+    phone: string;
+  }
+        `,
+        HTML: 'contact.html',
+        SCSS: 'contact.scss',
+      },
+    },
   },
   FOOTER: { NOTE: 'All Rights Reserved.' },
 };

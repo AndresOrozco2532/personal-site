@@ -62,7 +62,7 @@
 
     .figures {
       &__photo {
-        content: var(--image-figure-hero);
+        content: var(--icon-figure-hero);
         @include to(laptop) {
           width: 50%;
           margin: 0 auto;

@@ -10,6 +10,7 @@ import {
   ICON_TOOL_NGRX,
   ICON_TOOL_REACT,
 } from '@app/presentation/assets/themes/miscellany/images';
+import { TabEditorModel } from '@app/presentation/layout/components/monaco-editor/types';
 
 export const SIDE_BAR_STYLES: { [key: string]: SideBarStyle } = {
   HERO: {
@@ -68,22 +69,54 @@ export interface ServiceCard {
 export const SERVICES: ServiceCard[] = [
   {
     icon: ICONS_CSS_VAR.SERVICE_FRONTEND,
-    title: 'PUBLIC.LANDING.SERVICES.FRONT.TITLE',
+    title: 'PUBLIC.LANDING.SERVICES.FRONT.title',
     description: 'PUBLIC.LANDING.SERVICES.FRONT.DESCRIPTION',
   },
   {
     icon: ICONS_CSS_VAR.SERVICE_BACKEND,
-    title: 'PUBLIC.LANDING.SERVICES.BACK.TITLE',
+    title: 'PUBLIC.LANDING.SERVICES.BACK.title',
     description: 'PUBLIC.LANDING.SERVICES.BACK.DESCRIPTION',
   },
   {
     icon: ICONS_CSS_VAR.SERVICE_APPS,
-    title: 'PUBLIC.LANDING.SERVICES.APPS.TITLE',
+    title: 'PUBLIC.LANDING.SERVICES.APPS.title',
     description: 'PUBLIC.LANDING.SERVICES.APPS.DESCRIPTION',
   },
   {
     icon: ICONS_CSS_VAR.SERVICE_BPM,
-    title: 'PUBLIC.LANDING.SERVICES.BPM.TITLE',
+    title: 'PUBLIC.LANDING.SERVICES.BPM.title',
     description: 'PUBLIC.LANDING.SERVICES.BPM.DESCRIPTION',
+  },
+];
+
+// Let's work together
+
+export enum CONSOLE_LANGUAGES {
+  TYPESCRIPT = 'typescript',
+  HTML = 'html',
+  SCSS = 'css',
+}
+
+export const CONSOLE_CODE_LANGUAGES: TabEditorModel[] = [
+  {
+    icon: ICONS_CSS_VAR.LANGUAGES_TYPESCRIPT,
+    title: 'PUBLIC.LANDING.LETS_WORK_TOGETHER.CONSOLE.TABS.TYPESCRIPT',
+    code: 'PUBLIC.LANDING.LETS_WORK_TOGETHER.CONSOLE.CODE.TYPESCRIPT',
+    language: CONSOLE_LANGUAGES.TYPESCRIPT,
+    editorOptions: { language: CONSOLE_LANGUAGES.TYPESCRIPT },
+  },
+  {
+    icon: ICONS_CSS_VAR.LANGUAGES_HTML,
+    title: 'PUBLIC.LANDING.LETS_WORK_TOGETHER.CONSOLE.TABS.HTML',
+    code: 'PUBLIC.LANDING.LETS_WORK_TOGETHER.CONSOLE.CODE.HTML',
+    language: CONSOLE_LANGUAGES.HTML,
+    editorOptions: { language: CONSOLE_LANGUAGES.HTML },
+  },
+  {
+    icon: ICONS_CSS_VAR.LANGUAGES_SCSS,
+    title: 'PUBLIC.LANDING.LETS_WORK_TOGETHER.CONSOLE.TABS.SCSS',
+    code: 'PUBLIC.LANDING.LETS_WORK_TOGETHER.CONSOLE.CODE.SCSS',
+    language: CONSOLE_LANGUAGES.SCSS,
+    editorOptions: { language: CONSOLE_LANGUAGES.SCSS },
   },
 ];

@@ -1,0 +1,37 @@
+<div [class]="'tabs-group ' + tabsAlignClass">
+  <div
+    [class.active]="activeTab === item && item?.labelComponent"
+    [class.progress-seleted]="
+      i == activeTabIndex && item?.labelProgressComponent
+    "
+    [class.progress-active]="i < activeTabIndex && item?.labelProgressComponent"
+    class="tabs-label-content"
+    *ngFor="let item of tabItems$ | async; let i = index"
+    (click)="onSelectTab(item, i)"
+  >
+    <ng-container *ngIf="item?.labelComponent">
+      <ng-container *ngTemplateOutlet="item?.labelComponent?.labelContent">
+      </ng-container>
+    </ng-container>
+
+    <ng-container *ngIf="item?.labelProgressComponent">
+      <ng-container
+        *ngTemplateOutlet="item?.labelProgressComponent?.labelContent"
+      >
+      </ng-container>
+    </ng-container>
+
+    <ng-container
+      *ngIf="!item?.labelComponent && !item?.labelProgressComponent"
+    >
+      {{ item.label }}
+    </ng-container>
+  </div>
+</div>
+
+<div class="tab-content">
+  <ng-container *ngIf="activeTab?.bodyComponent">
+    <ng-container *ngTemplateOutlet="activeTab.bodyComponent?.bodyContent">
+    </ng-container>
+  </ng-container>
+</div>

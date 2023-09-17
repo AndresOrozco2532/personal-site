@@ -59,6 +59,32 @@ const LANDING: LandingPageTranslate = {
       MESSAGE_PLACEHOLDER: 'Cuéntame algo sobre lo que tienes en mente',
       BTN_SEND: 'Enviar',
     },
+    CONSOLE: {
+      TABS: {
+        TYPESCRIPT: 'contactame.ts',
+        HTML: 'contactame.html',
+        SCSS: 'contactame.scss',
+      },
+      CODE: {
+        TYPESCRIPT: `export class AndresOrozco {
+  public obtenerInformacionDeContacto(): InformacionDeContacto {
+    const infoContacto = {
+      correo: "andresorozco2532@gmail.com",
+      telefono: "+57 320 201 2700"
+    };
+    return infoContacto;
+  }
+}
+
+interface InformacionDeContacto {
+  correo: string;
+  telefono: string;
+}
+        `,
+        HTML: 'contactame.html',
+        SCSS: 'contactame.scss',
+      },
+    },
   },
   FOOTER: { NOTE: 'Todos los derechos Reservados.' },
 };

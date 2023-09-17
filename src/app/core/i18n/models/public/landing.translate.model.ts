@@ -45,6 +45,7 @@ export interface LetsWorkTogetherTranslate {
   TITLE: string;
   DESCRIPTION: string;
   CONTACT: LetsWorkTogetherContactTranslate;
+  CONSOLE: LetsWorkTogetherConsoleTranslate;
 }
 
 export interface LetsWorkTogetherContactTranslate {
@@ -56,6 +57,11 @@ export interface LetsWorkTogetherContactTranslate {
   MESSAGE: string;
   MESSAGE_PLACEHOLDER: string;
   BTN_SEND: string;
+}
+
+export interface LetsWorkTogetherConsoleTranslate {
+  TABS: { TYPESCRIPT: string; HTML: string; SCSS: string };
+  CODE: { TYPESCRIPT: string; HTML: string; SCSS: string };
 }
 
 export interface FooterTranslate {
