@@ -81,9 +81,29 @@ const LANDING: LandingPageTranslate = {
     email: string;
     phone: string;
   }
-        `,
-        HTML: 'contact.html',
-        SCSS: 'contact.scss',
+  `,
+        HTML: `<div class="contact">
+  <h1 class="contact__title">Contact me 😎😉</h1>
+  <p class="contact__description">
+    Let's boost your digital brand together 🤩
+  </p>
+</div>`,
+        SCSS: `.contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  font-family: Poppins-Bold, sans-serif;
+  font-size: 30px;
+}
+
+.description {
+  font-family: Poppins-Regular, sans-serif;
+  font-size: 12px;
+}
+`,
       },
     },
   },

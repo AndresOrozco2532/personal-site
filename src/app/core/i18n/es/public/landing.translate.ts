@@ -81,8 +81,29 @@ interface InformacionDeContacto {
   telefono: string;
 }
         `,
-        HTML: 'contactame.html',
-        SCSS: 'contactame.scss',
+        HTML: `<div clase="contacto">
+  <h1 class="titulo">Contáctame 😎😉</h1>
+  <p clase="descripcion">
+    Impulsemos juntos tu marca digital 🤩
+  </p>
+</div>
+`,
+        SCSS: `.contacto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.titulo {
+  font-family: Poppins-Bold, sans-serif;
+  font-size: 30px;
+}
+
+.descripcion {
+  font-family: Poppins-Regular, sans-serif;
+  font-size: 12px;
+}
+`,
       },
     },
   },
