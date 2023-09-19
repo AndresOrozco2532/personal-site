@@ -107,7 +107,9 @@ interface InformacionDeContacto {
       },
     },
   },
-  FOOTER: { NOTE: 'Todos los derechos Reservados.' },
+  FOOTER: {
+    NOTE: '© {{year}} <span class="highlighted">AndresOrozco.dev</span> Todos los derechos reservados.',
+  },
 };
 
 export default LANDING;

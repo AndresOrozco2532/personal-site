@@ -107,7 +107,9 @@ const LANDING: LandingPageTranslate = {
       },
     },
   },
-  FOOTER: { NOTE: 'All Rights Reserved.' },
+  FOOTER: {
+    NOTE: '© {{year}} <span class="highlighted">AndresOrozco.dev</span> All Rights Reserved.',
+  },
 };
 
 export default LANDING;

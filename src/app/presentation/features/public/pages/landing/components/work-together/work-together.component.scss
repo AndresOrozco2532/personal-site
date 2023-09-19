@@ -5,10 +5,10 @@
   &__content {
     display: grid;
     align-items: center;
-    padding: 0.5rem 0 7rem;
+    padding: 0.5rem 0 2rem;
     gap: 1rem;
     @include to(laptop) {
-      padding: 1rem 0 4rem;
+      padding: 1rem 0 2rem;
       gap: 1.5rem;
     }
     .contact-container {
@@ -22,6 +22,8 @@
         gap: 1rem;
       }
       &__header {
+        display: grid;
+        gap: 0.5rem;
         .title {
           font-family: var(--font-primary-bold);
           font-size: var(--text-font-size-big);
@@ -65,12 +67,12 @@
                 gap: 0.5rem;
               }
               @include to(laptop) {
-                gap: 0.3rem;
+                gap: 0.5rem;
               }
 
               &__title {
                 display: flex;
-                gap: 5px;
+                gap: 10px;
                 justify-content: flex-start;
                 align-items: center;
                 .check-icon {

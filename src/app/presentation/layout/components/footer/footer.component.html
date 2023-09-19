@@ -1,1 +1,23 @@
-<div class="footer"></div>
+<div class="footer">
+  <div class="footer__sections">
+    <a href="#hero" class="section">
+      <p>{{ "PUBLIC.LANDING.HERO.NAME" | translate }}</p>
+    </a>
+    <a href="#skills" class="section">
+      <p>{{ "PUBLIC.LANDING.SKILLS.NAME" | translate }}</p>
+    </a>
+    <a href="#services" class="section">
+      <p>{{ "PUBLIC.LANDING.SERVICES.NAME" | translate }}</p>
+    </a>
+    <a href="#work-together" class="section">
+      <p>{{ "PUBLIC.LANDING.LETS_WORK_TOGETHER.NAME" | translate }}</p>
+    </a>
+  </div>
+  <div class="footer__social-media"></div>
+  <div class="footer__note-container">
+    <p
+      class="note"
+      [innerHTML]="'PUBLIC.LANDING.FOOTER.NOTE' | translate : { year }"
+    ></p>
+  </div>
+</div>

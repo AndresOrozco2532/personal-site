@@ -63,6 +63,18 @@ export const ICON_LANGUAGES_HTML: string =
 export const ICON_LANGUAGES_SCSS: string =
   '/app/presentation/assets/icons/languages/scss.svg';
 
+// SOCIAL MEDIA
+export const ICON_SOCIAL_MEDIA_X: string =
+  '/app/presentation/assets/icons/social-media/x.svg';
+export const ICON_SOCIAL_MEDIA_FACEBOOK: string =
+  '/app/presentation/assets/icons/social-media/facebook.svg';
+export const ICON_SOCIAL_MEDIA_INSTAGRAM: string =
+  '/app/presentation/assets/icons/social-media/instagram.svg';
+export const ICON_SOCIAL_MEDIA_LINKEDIN: string =
+  '/app/presentation/assets/icons/social-media/linkedin.svg';
+export const ICON_SOCIAL_MEDIA_FIGMA: string =
+  '/app/presentation/assets/icons/social-media/figma.svg';
+
 export enum ICONS_CSS_VAR {
   // GENERAL
   SLIDER_THUMB = '--icon-slider-thumb',
@@ -96,6 +108,12 @@ export enum ICONS_CSS_VAR {
   LANGUAGES_TYPESCRIPT = '--icon-language-typescript',
   LANGUAGES_HTML = '--icon-language-html',
   LANGUAGES_SCSS = '--icon-language-scss',
+  // SOCIAL MEDIA
+  SOCIAL_MEDIA_X = '--icon-social-media-x',
+  SOCIAL_MEDIA_FACEBOOK = '--icon-social-media-facebook',
+  SOCIAL_MEDIA_INSTAGRAM = '--icon-social-media-instagram',
+  SOCIAL_MEDIA_LINKEDIN = '--icon-social-media-linkedin',
+  SOCIAL_MEDIA_FIGMA = '--icon-social-media-figma',
 }
 
 /***
