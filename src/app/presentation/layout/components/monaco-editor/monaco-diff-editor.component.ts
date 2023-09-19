@@ -1,5 +1,4 @@
 import { Component, Inject, Input } from '@angular/core';
-import { fromEvent } from 'rxjs';
 
 import { BaseEditor } from './base-editor';
 import { MONACO_EDITOR_CONFIG, MonacoEditorConfig } from './config';
@@ -94,13 +93,6 @@ export class MonacoDiffEditorComponent extends BaseEditor {
       modified: modifiedModel,
     });
 
-    // refresh layout on resize event.
-    if (this._windowResizeSubscription) {
-      this._windowResizeSubscription.unsubscribe();
-    }
-    this._windowResizeSubscription = fromEvent(window, 'resize').subscribe(() =>
-      this._editor.layout()
-    );
     this.onInit.emit(this._editor);
   }
 }

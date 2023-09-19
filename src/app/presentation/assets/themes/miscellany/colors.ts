@@ -135,3 +135,5 @@ export const DARK_SALMON_100: string = '#510300';
 // Background
 export const BACKGROUND: string = '#0D1117';
 export const TEXT_BASE: string = '#fff';
+export const INPUT_TEXT: string = '#fafafa';
+export const INPUT_BACKGROUND: string = '#272b30';

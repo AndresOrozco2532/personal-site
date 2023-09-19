@@ -1,5 +1,10 @@
 .form-control {
   @include inputControlBase;
+  @include placeholder(
+    var(--text-font-size-normal),
+    --color-neutral-0,
+    --color-neutral-5
+  );
 }
 
 input:disabled {

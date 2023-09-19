@@ -12,19 +12,93 @@
       gap: 1.5rem;
     }
     .contact-container {
+      display: grid;
+      gap: 2rem;
       padding: 1rem;
       border-radius: 8px;
       border: 1px solid #30363d;
       background: #161b22;
-      &__console {
-        .tab {
-          display: flex;
-          gap: 5px;
-          justify-content: center;
-          align-items: center;
+      @include to(laptop) {
+        gap: 1rem;
+      }
+      &__header {
+        .title {
+          font-family: var(--font-primary-bold);
+          font-size: var(--text-font-size-big);
         }
-        .console-container {
-          height: 300px;
+        .description {
+          font-family: var(--font-primary-light);
+        }
+      }
+      &__footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+        @include to(laptop) {
+          grid-template-columns: 1fr;
+        }
+
+        .form-container {
+          &__tab,
+          &__form {
+            background-color: #41474e;
+            padding: 1rem 1.5rem;
+          }
+          &__tab {
+            display: flex;
+            padding: 1rem 1.5rem;
+            border-radius: 5px 5px 0 0;
+            width: max-content;
+          }
+          &__form {
+            display: grid;
+            gap: 1rem;
+            border-radius: 0 5px 5px 5px;
+
+            .form-item {
+              display: grid;
+              align-items: flex-start;
+              grid-template-columns: 25% 1fr;
+              gap: 1rem;
+              @include to(laptop-l) {
+                grid-template-columns: 1fr;
+                gap: 0.5rem;
+              }
+              @include to(laptop) {
+                gap: 0.3rem;
+              }
+
+              &__title {
+                display: flex;
+                gap: 5px;
+                justify-content: flex-start;
+                align-items: center;
+                .check-icon {
+                  content: var(--icon-check);
+                }
+              }
+            }
+
+            .form-buttons {
+              display: flex;
+              justify-content: flex-end;
+              @include to(laptop) {
+                display: block;
+              }
+            }
+          }
+        }
+
+        .console {
+          &__tab {
+            display: flex;
+            gap: 5px;
+            justify-content: center;
+            align-items: center;
+          }
+          &__container {
+            height: 300px;
+          }
         }
       }
     }

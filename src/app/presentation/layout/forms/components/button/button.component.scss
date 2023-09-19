@@ -80,8 +80,8 @@
     }
     &.disabled {
       background-color: var(--color-plump-purple-40);
-      color: var(--color-plump-purple-20);
       opacity: 0.9;
+      color: var(--color-neutral-40);
       cursor: not-allowed;
     }
   }
@@ -94,8 +94,8 @@
     }
     &.disabled {
       background-color: var(--color-american-green-10);
-      color: var(--color-american-green-20);
       opacity: 0.9;
+      color: var(--color-neutral-40);
       cursor: not-allowed;
     }
   }

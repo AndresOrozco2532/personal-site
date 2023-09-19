@@ -1,5 +1,5 @@
 <div class="form-group">
-  <label class="label">
+  <label class="label" *ngIf="label">
     {{ label }}
     <ng-container *ngTemplateOutlet="rightContent"></ng-container>
   </label>

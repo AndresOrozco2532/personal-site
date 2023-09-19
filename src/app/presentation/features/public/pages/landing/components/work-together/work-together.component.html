@@ -10,39 +10,131 @@
         {{ "PUBLIC.LANDING.LETS_WORK_TOGETHER.NAME" | translate }}
       </p>
       <div class="contact-container">
-        <p class="contact-container__title">
-          {{ "PUBLIC.LANDING.LETS_WORK_TOGETHER.TITLE" | translate }}
-        </p>
-        <p class="contact-container__description">
-          {{ "PUBLIC.LANDING.LETS_WORK_TOGETHER.DESCRIPTION" | translate }}
-        </p>
-
-        <div class="contact-container__form"></div>
-        <div class="contact-container__console">
-          <layout-tab-group
-            [activeTabIndex]="0"
-            [tabsAlignClass]="TABS_ALIGN_CLASS.LEFT"
-            (tabChange)="onTabChange($event)"
-          >
-            <layout-tab-item *ngFor="let tab of tabs; let i = index">
-              <layout-tab-label>
-                <div class="tab">
-                  <img [ngStyle]="{ content: 'var(' + tab?.icon + ')' }" />
-                  <p>{{ tab?.title | translate }}</p>
+        <div class="contact-container__header">
+          <p class="title">
+            {{ "PUBLIC.LANDING.LETS_WORK_TOGETHER.TITLE" | translate }}
+          </p>
+          <p class="description">
+            {{ "PUBLIC.LANDING.LETS_WORK_TOGETHER.DESCRIPTION" | translate }}
+          </p>
+        </div>
+        <div class="contact-container__footer">
+          <div class="form-container">
+            <div class="form-container__tab">
+              <p class="title">
+                {{
+                  "PUBLIC.LANDING.LETS_WORK_TOGETHER.CONTACT.TAB" | translate
+                }}
+              </p>
+            </div>
+            <form
+              class="form-container__form"
+              [formGroup]="form"
+              (ngSubmit)="onContact()"
+            >
+              <div class="form-item">
+                <div class="form-item__title">
+                  <img class="check-icon" />
+                  <p>
+                    {{
+                      "PUBLIC.LANDING.LETS_WORK_TOGETHER.CONTACT.NAME"
+                        | translate
+                    }}
+                  </p>
                 </div>
-              </layout-tab-label>
-              <layout-tab-body>
-                <div class="console-container">
-                  <monaco-editor
-                    [refreshLayout]="index === getTabIndex(tab?.language)"
-                    [options]="tab?.editorOptions"
-                    [ngModel]="tab?.code | translate"
-                    (ngModelChange)="(tab?.code)"
-                  ></monaco-editor>
+                <form-input
+                  formControlName="name"
+                  [placeholder]="
+                    'PUBLIC.LANDING.LETS_WORK_TOGETHER.CONTACT.NAME_PLACEHOLDER'
+                      | translate
+                  "
+                ></form-input>
+              </div>
+              <div class="form-item">
+                <div class="form-item__title">
+                  <img class="check-icon" />
+                  <p>
+                    {{
+                      "PUBLIC.LANDING.LETS_WORK_TOGETHER.CONTACT.EMAIL"
+                        | translate
+                    }}
+                  </p>
                 </div>
-              </layout-tab-body>
-            </layout-tab-item>
-          </layout-tab-group>
+                <form-input
+                  formControlName="email"
+                  [placeholder]="
+                    'PUBLIC.LANDING.LETS_WORK_TOGETHER.CONTACT.EMAIL_PLACEHOLDER'
+                      | translate
+                  "
+                  [type]="INPUT_TYPE.EMAIL"
+                ></form-input>
+              </div>
+              <div class="form-item">
+                <div class="form-item__title">
+                  <img class="check-icon" />
+                  <p>
+                    {{
+                      "PUBLIC.LANDING.LETS_WORK_TOGETHER.CONTACT.MESSAGE"
+                        | translate
+                    }}
+                  </p>
+                </div>
+                <form-textarea
+                  formControlName="message"
+                  [placeholder]="
+                    'PUBLIC.LANDING.LETS_WORK_TOGETHER.CONTACT.MESSAGE_PLACEHOLDER'
+                      | translate
+                  "
+                ></form-textarea>
+              </div>
+              <div class="form-buttons">
+                <form-button
+                  [text]="
+                    'PUBLIC.LANDING.LETS_WORK_TOGETHER.CONTACT.BTN_SEND'
+                      | translate
+                  "
+                  [size]="SIZES.MD"
+                  [designClass]="BUTTON_DESIGN_CLASS.AMERICAN_GREEN"
+                  [displayBlock]="!(isDesktopScreen$ | async)"
+                  [type]="BUTTON_TYPE.SUBMIT"
+                  [isDisabled]="form.invalid"
+                ></form-button>
+              </div>
+            </form>
+          </div>
+          <div class="console">
+            <layout-tab-group
+              [activeTabIndex]="0"
+              [tabsAlignClass]="TABS_ALIGN_CLASS.LEFT"
+              (tabChange)="onTabChange($event)"
+            >
+              <layout-tab-item *ngFor="let tab of tabs; let i = index">
+                <layout-tab-label>
+                  <div class="console__tab">
+                    <img [ngStyle]="{ content: 'var(' + tab?.icon + ')' }" />
+                    <p
+                      *ngIf="
+                        index === getTabIndex(tab?.language) ||
+                        (isDesktopScreen$ | async)
+                      "
+                    >
+                      {{ tab?.title | translate }}
+                    </p>
+                  </div>
+                </layout-tab-label>
+                <layout-tab-body>
+                  <div class="console__container">
+                    <monaco-editor
+                      [refreshLayout]="index === getTabIndex(tab?.language)"
+                      [options]="tab?.editorOptions"
+                      [ngModel]="tab?.code | translate"
+                      (ngModelChange)="(tab?.code)"
+                    ></monaco-editor>
+                  </div>
+                </layout-tab-body>
+              </layout-tab-item>
+            </layout-tab-group>
+          </div>
         </div>
       </div>
     </div>

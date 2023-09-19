@@ -1,6 +1,5 @@
 import { Component, Inject, Input, NgZone, forwardRef } from '@angular/core';
 import { ControlValueAccessor, NG_VALUE_ACCESSOR } from '@angular/forms';
-import { fromEvent } from 'rxjs';
 import { BaseEditor } from './base-editor';
 import { MONACO_EDITOR_CONFIG, MonacoEditorConfig } from './config';
 import { EditorModel } from './types';
@@ -121,13 +120,6 @@ export class MonacoEditorComponent
       this.onTouched();
     });
 
-    // refresh layout on resize event.
-    if (this._windowResizeSubscription) {
-      this._windowResizeSubscription.unsubscribe();
-    }
-    this._windowResizeSubscription = fromEvent(window, 'resize').subscribe(() =>
-      this._editor.layout()
-    );
     this.onInit.emit(this._editor);
   }
 }

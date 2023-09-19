@@ -11,7 +11,12 @@ import {
   SimpleChanges,
   ViewChild,
 } from '@angular/core';
-import { Subscription } from 'rxjs';
+import {
+  Subscription,
+  debounceTime,
+  distinctUntilChanged,
+  fromEvent,
+} from 'rxjs';
 import { MONACO_EDITOR_CONFIG, MonacoEditorConfig } from './config';
 
 let loadedMonaco = false;
@@ -81,6 +86,15 @@ export abstract class BaseEditor
           onGotAmdLoader();
         }
       });
+
+      // refresh layout on resize event.
+      this._windowResizeSubscription = fromEvent(window, 'resize')
+        .pipe(debounceTime(100), distinctUntilChanged())
+        .subscribe(() =>
+          loadPromise.then(() => {
+            this._editor.layout();
+          })
+        );
     }
   }
 

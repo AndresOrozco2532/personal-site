@@ -4,6 +4,8 @@
 // GENERAL
 export const ICON_SLIDER_THUMB: string =
   '/app/presentation/assets/icons/general/slider-thumb.svg';
+export const ICON_CHECK: string =
+  '/app/presentation/assets/icons/general/check.svg';
 
 // BACKGROUND
 export const ICON_BACKGROUND: string =
@@ -64,6 +66,7 @@ export const ICON_LANGUAGES_SCSS: string =
 export enum ICONS_CSS_VAR {
   // GENERAL
   SLIDER_THUMB = '--icon-slider-thumb',
+  CHECK = '--icon-check',
   // BACKGROUND
   BACKGROUND = '--icon-background',
   // LOGOS

@@ -136,6 +136,8 @@ const DARK_SALMON_COLORS: ThemeProperty = {
 const APP_COLORS: ThemeProperty = {
   '--color-backgroud': MISCELLANY_COLORS.BACKGROUND,
   '--color-text-base': MISCELLANY_COLORS.TEXT_BASE,
+  '--color-input-text': MISCELLANY_COLORS.INPUT_TEXT,
+  '--color-input-background': MISCELLANY_COLORS.INPUT_BACKGROUND,
 };
 
 export const COLORS = {

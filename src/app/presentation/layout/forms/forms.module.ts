@@ -4,10 +4,11 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { TranslateModule } from '@ngx-translate/core';
 import { ButtonComponent } from './components/button/button.component';
 import { InputComponent } from './components/input/input.component';
+import { TextAreaComponent } from './components/textarea/textarea.component';
 
 const STANDALONE_COMPONENTS = [ButtonComponent];
 
-const COMPONENTS = [InputComponent];
+const COMPONENTS = [InputComponent, TextAreaComponent];
 
 @NgModule({
   imports: [
