@@ -69,8 +69,8 @@ const LANDING: LandingPageTranslate = {
         TYPESCRIPT: `export class AndresOrozco {
   public obtenerInformacionDeContacto(): InformacionDeContacto {
     const infoContacto = {
-      correo: "andresorozco2532@gmail.com",
-      telefono: "+57 320 201 2700"
+      correo: "andresorozco.developer@gmail.com",
+      telefono: "+57 321 956 3996"
     };
     return infoContacto;
   }

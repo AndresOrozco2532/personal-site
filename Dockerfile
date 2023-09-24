@@ -1,5 +1,5 @@
 FROM node:16-alpine
-LABEL maintainer="andresorozco2532@gmail.com"
+LABEL maintainer="andresorozco.developer@gmail.com"
 WORKDIR /portal
 ARG env
 ENV ENVIRONMENT=${env}

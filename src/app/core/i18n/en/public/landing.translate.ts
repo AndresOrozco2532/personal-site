@@ -70,8 +70,8 @@ const LANDING: LandingPageTranslate = {
         TYPESCRIPT: `export class AndresOrozco {
   public getContactData(): ContactInfo {
       const contactInfo = {
-        email: "andresorozco2532@gmail.com",
-        phone: "+57 320 201 2700"
+        email: "andresorozco.developer@gmail.com",
+        phone: "+57 321 956 3996"
       };
       return contactInfo;
     }
