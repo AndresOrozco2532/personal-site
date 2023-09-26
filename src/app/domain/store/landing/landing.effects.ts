@@ -15,11 +15,7 @@ export class LandingEffects {
       switchMap(({ contact }) => {
         return this._emailApi.sendContactEmail(contact).pipe(
           map(() => landingActions.sendContactEmailSuccess()),
-          catchError((_) => {
-            console.log(_);
-            return of(landingActions.sendContactEmailFailed());
-          })
-          // catchError((_) => of(landingActions.sendContactEmailFailed()))
+          catchError((_) => of(landingActions.sendContactEmailFailed()))
         );
       })
     )
