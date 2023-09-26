@@ -6,6 +6,7 @@ import {
 } from '@angular/forms';
 import { SideBarStyle } from '@app/core/models/side-bar.model';
 import { AppFacade } from '@app/facade/app/app.facade';
+import { LandingFacade } from '@app/facade/landing/landing.facade';
 import { ICONS_CSS_VAR } from '@app/presentation/assets/themes/miscellany/images';
 import { TabEditorModel } from '@app/presentation/layout/components/monaco-editor/types';
 import { SIZES } from '@app/presentation/layout/enums/layout.enum';
@@ -29,6 +30,7 @@ import {
 })
 export class WorkTogetherComponent implements OnInit {
   public isDesktopScreen$: Observable<boolean>;
+  public isLoadingContact$: Observable<boolean>;
 
   public barStyle: SideBarStyle;
   public barIcon: string;
@@ -44,7 +46,8 @@ export class WorkTogetherComponent implements OnInit {
 
   constructor(
     private _formBuilder: UntypedFormBuilder,
-    private _appFacade: AppFacade
+    private _appFacade: AppFacade,
+    private _landingFacade: LandingFacade
   ) {}
 
   ngOnInit(): void {
@@ -58,11 +61,12 @@ export class WorkTogetherComponent implements OnInit {
 
   public onContact() {
     if (this.form.invalid) return;
-    // TODO IMPLEMENT SEND EMAIL
+    this._landingFacade.sendContactEmail(this.form.value);
   }
 
   private _setInitialValues() {
     this.isDesktopScreen$ = this._appFacade.isDesktopScreen$;
+    this.isLoadingContact$ = this._landingFacade.isLoadingContact$;
     this.barStyle = SIDE_BAR_STYLES.WORK_TOGETHER;
     this.barIcon = ICONS_CSS_VAR.SECTION_WORK_TOGETHER;
     this.tabs = CONSOLE_CODE_LANGUAGES;

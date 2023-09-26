@@ -97,7 +97,8 @@
                   [designClass]="BUTTON_DESIGN_CLASS.AMERICAN_GREEN"
                   [displayBlock]="!(isDesktopScreen$ | async)"
                   [type]="BUTTON_TYPE.SUBMIT"
-                  [isDisabled]="form.invalid"
+                  [isLoading]="isLoadingContact$ | async"
+                  [isDisabled]="(isLoadingContact$ | async) || form.invalid"
                 ></form-button>
               </div>
             </form>

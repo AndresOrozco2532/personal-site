@@ -20,6 +20,7 @@ export enum RESPONSE_TYPE {
 
 export enum HTTP_HEADERS {
   CONTENT_TYPE = 'Content-Type',
+  API_KEY = 'apiKey',
   ACCEPT_LANGUAGE = 'Accept-Language',
   AUTHORIZATION = 'Authorization',
   ACCEPT = 'Accept',

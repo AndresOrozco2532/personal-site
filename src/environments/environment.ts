@@ -1,6 +1,6 @@
 export const environment = {
   production: false,
   testServeWait: 1000,
-  isTestServer: true,
-  api_url: '',
+  isTestServer: false,
+  api_url: 'https://yellow-blackbuck-yoke.cyclic.cloud',
 };
