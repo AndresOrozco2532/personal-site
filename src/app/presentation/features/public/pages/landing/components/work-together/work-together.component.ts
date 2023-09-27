@@ -62,6 +62,7 @@ export class WorkTogetherComponent implements OnInit {
   public onContact() {
     if (this.form.invalid) return;
     this._landingFacade.sendContactEmail(this.form.value);
+    this.form.reset();
   }
 
   private _setInitialValues() {
