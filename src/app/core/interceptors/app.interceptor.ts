@@ -7,18 +7,22 @@ import {
 } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 
-import { Observable } from 'rxjs';
+import { Observable, mergeMap } from 'rxjs';
 
 import { environment } from 'src/environments/environment';
 
+import { AppFacade } from '@app/facade/app/app.facade';
 import { APP_CONSTANTS } from '../constants/app.constants';
 import { COUNTRY_CONSTANTS } from '../constants/country.constants';
 import { CONTENT_TYPE, HTTP_HEADERS } from '../constants/http.constants';
+import { DEFAULT_LANGUAGE } from '../i18n/constants/translate.constants';
 
 const API_URL = environment.api_url;
 
 @Injectable()
 export class AppInterceptor implements HttpInterceptor {
+  constructor(private _appFacade: AppFacade) {}
+
   intercept(
     req: HttpRequest<any>,
     next: HttpHandler
@@ -39,14 +43,20 @@ export class AppInterceptor implements HttpInterceptor {
         params = params.append(key, param);
     });
 
-    const url: string = `${API_URL}/${APP_CONSTANTS.API_NAME}${req.url}`;
+    return this._appFacade.language$.pipe(
+      mergeMap((language) => {
+        headers[HTTP_HEADERS.ACCEPT_LANGUAGE] = language ?? DEFAULT_LANGUAGE;
 
-    const reqUpdated = req.clone({
-      url,
-      setHeaders: headers,
-      params,
-    });
-    return this._continueRequest(reqUpdated, next);
+        const url: string = `${API_URL}/${APP_CONSTANTS.API_NAME}${req.url}`;
+        const reqUpdated = req.clone({
+          url,
+          setHeaders: headers,
+          params,
+        });
+
+        return this._continueRequest(reqUpdated, next);
+      })
+    );
   }
 
   private _continueRequest(
