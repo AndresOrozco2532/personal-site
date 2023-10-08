@@ -1,4 +1,11 @@
 <div class="hero" id="hero">
+  <div class="hero__languages">
+    <form-drop-down
+      [options]="languagesOptions"
+      [ngModel]="language"
+      (ngModelChange)="onUpdateLanguage($event)"
+    ></form-drop-down>
+  </div>
   <layout-section-container>
     <layout-side-bar
       [icon]="barIcon"

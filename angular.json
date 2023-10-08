@@ -35,7 +35,11 @@
                 "output": "assets/monaco-editor"
               }
             ],
-            "styles": ["src/styles.scss"],
+            "styles": [
+              "src/styles.scss",
+              "node_modules/@iconscout/unicons/css/line.css",
+              "node_modules/@iconscout/unicons/css/solid.css"
+            ],
             "stylePreprocessorOptions": {
               "includePaths": ["src/app/presentation/assets/scss"]
             },

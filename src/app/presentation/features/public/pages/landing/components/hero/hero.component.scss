@@ -2,6 +2,11 @@
 @import "mixins/breakpoints";
 
 .hero {
+  &__languages {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 1rem;
+  }
   &__top {
     display: grid;
     grid-template-columns: 1fr 1fr;

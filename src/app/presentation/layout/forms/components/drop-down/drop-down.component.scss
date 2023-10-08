@@ -1,0 +1,133 @@
+@import "mixins/transitions";
+@import "mixins/forms";
+
+.box-dropdown-bg {
+  display: block;
+  position: relative;
+  &.with-out-spaces {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  &.dropdown-disabled {
+    cursor: not-allowed;
+  }
+}
+
+.form-dropdown {
+  @include inputControlBase;
+  @include transition(background-color 1s ease-out);
+  padding-right: 48px;
+  text-transform: capitalize;
+  background-color: var(--color-backgroud);
+
+  &.size-sm {
+    padding: 5px 30px 5px 10px;
+  }
+  &--open {
+    border: 2px solid var(--color-primary-60);
+  }
+}
+.only-label {
+  cursor: pointer;
+  &--open {
+    color: var(--color-primary-60);
+  }
+}
+
+.icon {
+  position: absolute;
+  right: 14px;
+  top: 2px;
+  font-size: 26px;
+  z-index: 0;
+  color: var(--color-neutral-50);
+  &--open {
+    color: var(--color-primary-60);
+  }
+  &__label {
+    text-align: center;
+    padding-right: 1.5rem;
+    &.size-sm {
+      font-size: 16px;
+    }
+  }
+  &__label,
+  &.size-lg {
+    top: -5px;
+    font-size: 46px;
+  }
+  &__label,
+  &.size-md {
+    top: -1px;
+    font-size: 32px;
+  }
+
+  &.size-sm {
+    top: -2px;
+    font-size: 20px;
+  }
+}
+
+.form-options-box {
+  background: var(--color-backgroud);
+  border: 1px solid #cbd4e1;
+  box-sizing: border-box;
+  box-shadow: 0px 8px 12px rgba(9, 30, 66, 0.15);
+  border-radius: 8px;
+  position: absolute;
+  width: 100%;
+  top: 50px;
+  left: 0;
+  padding: 12px;
+  z-index: 20;
+  max-height: 140px;
+  overflow-y: scroll;
+  &.orientaton-top {
+    top: -150px;
+  }
+  &:not(.orientaton-top).size-lg {
+    top: 60px;
+  }
+  &:not(.orientaton-top).size-md {
+    top: 40px;
+  }
+  &:not(.orientaton-top).size-sm {
+    top: 30px;
+  }
+  &.size-sm {
+    .form-option {
+      padding: 10px 5px;
+    }
+  }
+}
+
+.form-option {
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 6px;
+  font-weight: 500;
+  font-family: var(--font-primary-medium);
+  display: grid;
+  grid-template-columns: 1fr;
+  &__item {
+    display: flex;
+    align-items: center;
+    text-transform: capitalize;
+  }
+  &__selected {
+    grid-template-columns: 1fr 20px;
+  }
+  &__unselect {
+    color: var(--color-primary-60);
+    font-size: 22px;
+    text-align: right;
+  }
+  &:hover {
+    background-color: var(--color-primary-10);
+  }
+}
+
+.selected-option {
+  color: var(--color-neutral-50);
+  font-size: 0.8rem;
+}

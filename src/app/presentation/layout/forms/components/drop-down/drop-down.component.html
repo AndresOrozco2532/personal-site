@@ -1,0 +1,76 @@
+<div
+  class="box-dropdown-bg"
+  [ngClass]="{
+    'with-out-spaces': controlWithoutSpaces,
+    'dropdown-disabled': isDisabled
+  }"
+>
+  <label
+    *ngIf="label"
+    class="form-label"
+    [ngClass]="{
+      'only-label': onlyLable,
+      'only-label--open': onlyLable && isOpen
+    }"
+    >{{ label | translate }}
+    <i
+      *ngIf="onlyLable"
+      [class]="'icon__label uil ' + size"
+      [ngClass]="isOpen ? 'uil-angle-up' : 'uil-angle-down '"
+    ></i>
+  </label>
+  <div
+    [class]="'form-dropdown ' + colorTemplate + ' ' + size"
+    [ngClass]="{ 'form-dropdown--open': isOpen }"
+    *ngIf="!onlyLable"
+  >
+    <div class="form-dropdown-content item-option">
+      <ng-container *ngIf="selectedKey; then asignedValue; else defaultValue">
+      </ng-container>
+      <ng-template #asignedValue>
+        <span>{{ selectedKey | translate }} </span>
+      </ng-template>
+      <ng-template #defaultValue>
+        <span class="selected-option">{{ defaultOptionName }}</span>
+      </ng-template>
+      <ng-container *ngIf="isOpen; then optionsItems"></ng-container>
+    </div>
+    <i
+      *ngIf="orientation == ORIENTATION.BOTTOM"
+      [class]="'icon uil ' + size"
+      [ngClass]="isOpen ? 'uil-angle-up icon--open' : 'uil-angle-down '"
+    ></i>
+    <i
+      *ngIf="orientation != ORIENTATION.BOTTOM"
+      [class]="'icon uil ' + size"
+      [ngClass]="isOpen ? 'uil-angle-down icon--open' : 'uil-angle-up '"
+    ></i>
+  </div>
+  <ng-container *ngIf="onlyLable; then optionsItems"></ng-container>
+
+  <ng-template #optionsItems>
+    <div
+      *ngIf="isOpen"
+      [class]="'form-options-box ' + size + ' ' + orientation"
+    >
+      <div
+        class="form-option"
+        [ngClass]="{
+          'form-option__selected': selectedKey == option?.key && canUnSelect
+        }"
+        *ngFor="let option of options"
+      >
+        <div class="form-option__item" (click)="selectOption(option)">
+          {{ option.key | translate }}
+        </div>
+        <div class="form-option__unselect" *ngIf="canUnSelect">
+          <i
+            class="uil uil-times-circle"
+            *ngIf="selectedKey == option?.key"
+            (click)="onResetSelect()"
+          ></i>
+        </div>
+      </div>
+    </div>
+  </ng-template>
+</div>
