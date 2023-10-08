@@ -1,6 +1,6 @@
 import { ThemeProperty } from '@app/core/models/theme.model';
 import * as MISCELLANY_IMAGES from '../miscellany/images';
-import { ICONS_CSS_VAR } from '../miscellany/images';
+import { ICONS_CSS_VAR, IMAGES_CSS_VAR } from '../miscellany/images';
 
 export const IMAGES: ThemeProperty = {
   /***
@@ -48,4 +48,7 @@ export const IMAGES: ThemeProperty = {
   /***
     IMAGES
   **/
+  // FIGURES
+  [IMAGES_CSS_VAR.FIGURE_HERO]: `url(${MISCELLANY_IMAGES.IMAGE_FIGURE_HERO})`,
+  [IMAGES_CSS_VAR.FIGURE_SKILLS]: `url(${MISCELLANY_IMAGES.IMAGE_FIGURE_SKILLS})`,
 };

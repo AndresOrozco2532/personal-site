@@ -61,11 +61,23 @@
     }
 
     .figures {
-      &__photo {
+      position: relative;
+      &__icon {
         content: var(--icon-figure-hero);
         @include to(laptop) {
           width: 50%;
           margin: 0 auto;
+        }
+      }
+      &__photo {
+        position: absolute;
+        content: var(--image-figure-hero);
+        width: 50%;
+        top: 45%;
+        left: 42%;
+        transform: translate(-50%, -50%);
+        @include to(laptop) {
+          width: 35%;
         }
       }
     }

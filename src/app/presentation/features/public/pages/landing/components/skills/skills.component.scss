@@ -13,15 +13,27 @@
       padding: 1rem 0 4rem;
     }
     .figures {
+      position: relative;
       display: flex;
       flex-direction: column;
       gap: 1rem;
-      &__photo {
+      &__icon {
         content: var(--icon-figure-skills);
         margin: 0 auto;
         @include to(laptop) {
           width: 50%;
           margin: 0 auto 2rem;
+        }
+      }
+      &__photo {
+        content: var(--image-figure-skills);
+        position: absolute;
+        width: 54%;
+        top: 32%;
+        left: 54%;
+        transform: translate(-50%, -50%);
+        @include to(laptop) {
+          width: 45%;
         }
       }
     }
