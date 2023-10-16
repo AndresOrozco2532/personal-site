@@ -124,9 +124,12 @@ export const IMAGE_FIGURE_HERO: string =
   '/app/presentation/assets/imgs/figures/hero.png';
 export const IMAGE_FIGURE_SKILLS: string =
   '/app/presentation/assets/imgs/figures/skills.png';
+export const IMAGE_FIGURE_CONSOLE: string =
+  '/app/presentation/assets/imgs/figures/console.png';
 
 export enum IMAGES_CSS_VAR {
   // FIGURES
   FIGURE_HERO = '--image-figure-hero',
   FIGURE_SKILLS = '--image-figure-skills',
+  FIGURE_CONSOLE = '--image-figure-console',
 }

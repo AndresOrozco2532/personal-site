@@ -103,39 +103,7 @@
               </div>
             </form>
           </div>
-          <div class="console">
-            <layout-tab-group
-              [activeTabIndex]="0"
-              [tabsAlignClass]="TABS_ALIGN_CLASS.LEFT"
-              (tabChange)="onTabChange($event)"
-            >
-              <layout-tab-item *ngFor="let tab of tabs; let i = index">
-                <layout-tab-label>
-                  <div class="console__tab">
-                    <img [ngStyle]="{ content: 'var(' + tab?.icon + ')' }" />
-                    <p
-                      *ngIf="
-                        index === getTabIndex(tab?.language) ||
-                        (isDesktopScreen$ | async)
-                      "
-                    >
-                      {{ tab?.title | translate }}
-                    </p>
-                  </div>
-                </layout-tab-label>
-                <layout-tab-body>
-                  <div class="console__container">
-                    <monaco-editor
-                      [refreshLayout]="index === getTabIndex(tab?.language)"
-                      [options]="tab?.editorOptions"
-                      [ngModel]="tab?.code | translate"
-                      (ngModelChange)="(tab?.code)"
-                    ></monaco-editor>
-                  </div>
-                </layout-tab-body>
-              </layout-tab-item>
-            </layout-tab-group>
-          </div>
+          <img class="console" />
         </div>
       </div>
     </div>

@@ -36,6 +36,7 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 1rem;
+        align-items: flex-end;
         @include to(laptop) {
           grid-template-columns: 1fr;
         }
@@ -92,15 +93,9 @@
         }
 
         .console {
-          &__tab {
-            display: flex;
-            gap: 5px;
-            justify-content: center;
-            align-items: center;
-          }
-          &__container {
-            height: 300px;
-          }
+          content: var(--image-figure-console);
+          margin: 0 auto;
+          width: 100%;
         }
       }
     }
