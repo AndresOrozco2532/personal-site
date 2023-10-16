@@ -10,6 +10,7 @@ import { ICONS_CSS_VAR } from '@app/presentation/assets/themes/miscellany/images
 import { SIZES } from '@app/presentation/layout/enums/layout.enum';
 import { BUTTON_DESIGN_CLASS } from '@app/presentation/layout/forms/enums/fields.type';
 import { SelectOption } from '@app/presentation/layout/forms/interfaces/form.interface';
+import { Observable } from 'rxjs';
 import { SIDE_BAR_STYLES, TOOLS_SRC } from '../../constants/landing.constants';
 
 @Component({
@@ -18,6 +19,7 @@ import { SIDE_BAR_STYLES, TOOLS_SRC } from '../../constants/landing.constants';
   styleUrls: ['./hero.component.scss'],
 })
 export class HeroComponent implements OnInit {
+  public isDesktopScreen$: Observable<boolean>;
   public ownerName: string;
   public tools: string[];
   public barStyle: SideBarStyle;
@@ -46,5 +48,6 @@ export class HeroComponent implements OnInit {
     this.tools = TOOLS_SRC;
     this.barStyle = SIDE_BAR_STYLES.HERO;
     this.barIcon = ICONS_CSS_VAR.SECTION_HERO;
+    this.isDesktopScreen$ = this._appFacade.isDesktopScreen$;
   }
 }

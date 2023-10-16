@@ -31,6 +31,7 @@
               [text]="'PUBLIC.LANDING.HERO.BTN_HIRE_ME' | translate"
               [size]="SIZES.MD"
               [designClass]="BUTTON_DESIGN_CLASS.PLUMP_PURPLE"
+              [displayBlock]="!(isDesktopScreen$ | async)"
             ></form-button>
           </a>
         </div>
